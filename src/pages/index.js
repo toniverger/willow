@@ -1,11 +1,14 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
+import '../styles/styles.css'
 
-const Home = () => {
-    return(
+const Index = () => {
+    return (
         <div>
-        <h1>home</h1>
+            <Navbar />
+            <h1>home</h1>
         </div>
     )
 }
 
-export default Home;
+export default Index;
