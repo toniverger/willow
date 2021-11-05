@@ -6,9 +6,9 @@ const Navbar = () => {
         <p>LOGO WILLOW</p>
         <div>
             <a href="/">INICIO</a>
-            <a href="/">SERVICIOS</a>
-            <a href="/">QUIERO SER PARTE</a>
-            <a href="/">CONTACTO</a>
+            <a href="/servicios">SERVICIOS</a>
+            <a href="/postulaciones">QUIERO SER PARTE</a>
+            <a href="/contacto">CONTACTO</a>
         </div>
         </div>
     )
