@@ -31,6 +31,7 @@ const Index = () => {
                 <div className="texts">
                     <p className="subtitle">¿Estas en el trabajo y quieres aprovechar para que te lavemos el auto?</p>
                     <p>Estas en el trabajo o en tu casa y tienes que lavar tu auto? No pierdas tiempo y no te preocupes, con Willow podes hacer tu pedido online y se lava el auto sin moverlo del lugar.</p>
+                    <button className="btn-blue">SOLICITAR LAVADO</button>
                 </div>
             </div>
 
@@ -38,6 +39,7 @@ const Index = () => {
                 <div className="texts texts-three">
                     <p className="subtitle">¿Quieres ser uno de nuestros lavadores?</p>
                     <p>Queremos conocerte mejor, te invitamos a completar tus datos en el siguiente boton: </p>
+                    <button className="btn-blue">QUIERO SER PARTE</button>
                 </div>
                 <div className="img-car">
                     <img src={carYellow} alt="auto amarillo" />
@@ -50,6 +52,7 @@ const Index = () => {
                     <p className="subtitle">¿Presisas un lavado?</p>
                     <p className="subtitle">Indicanos donde esta tú auto</p>
                     <p>Te invitamos a completar tus datos a través del siguiente link </p>
+                    <button className="btn-blue">SOLICITAR LAVADO</button>
                 </div>
             </div>
 

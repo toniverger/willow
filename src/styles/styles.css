@@ -1,7 +1,14 @@
 * {
     margin: 0px;
 }
-
+.btn-blue {
+    width: 170px;
+    height: 45px;
+    background-color: rgb(32, 211, 218);
+    border: none;
+    color: white;
+    margin: 20px;
+}
 .content-one {
     width: 100%;
     height: auto;
