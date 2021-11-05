@@ -1,3 +1,48 @@
 * {
     margin: 0px;
 }
+
+.content-one {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.texts {
+    width: 700px;
+    padding: 40px;
+    margin-left: 30px;
+    align-self: center;
+}
+
+.subtitle {
+    color: rgb(99, 232, 232);
+    font-size: 20px;
+  }
+  
+  .parrap {
+    color: gray;
+    font-size: 18px;
+  }
+  
+  .img-background {
+      align-self: flex-start;
+  }
+
+  .img-car {
+      align-self: flex-end;
+  }
+  .content-two {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+  }
+  
+  .texts-three {
+    width: 500px;
+    padding: 80px;
+    text-align: right;
+}
