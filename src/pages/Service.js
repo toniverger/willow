@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/styles.css'
 import carBlue from '../assets/img/car-blue.PNG';
 import Navbar from '../components/Navbar';
 
 const Service = () => {
+    console.log("select")
+    const [select, setSelect] = useState("");
+    const [price, setPrice] = useState("200");
     return (
         <>
             <Navbar />
@@ -17,12 +20,20 @@ const Service = () => {
                     <p className="service_paragraph">Lavado exterior realizado con hidrolavadoras a presión de bajo consumo en agua, utilización de jabones biodegradables que no contaminan, ni rayan la pintura del vehiculo. Lavado totalmente amigable con el medio ambiente. </p>
                     <div className="in-row type-transport">
                         <p className="type-transport_type">Tipo de vehículo</p>
-                        <select className="select" name="cars" id="cars">
+                        <select className="select" name="select" id="select">
                             <option value="auto">Auto</option>
                             <option value="camioneta">Camioneta o SVU</option>
                         </select>
                         <p className="text-clean">Limpiar</p>
                     </div>
+                    {
+                        (select) && (
+                            <div>
+                                <p>Este precio tiene un descuento promociónal</p>
+                                <p>${price}.00</p>
+                            </div>
+                        )
+                    }
                     <button className="btn-blue"><a className="text-white" href="lavado">Completar Datos</a></button>
                 </div>
             </div>
