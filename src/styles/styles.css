@@ -98,9 +98,12 @@
   height: 40px;
   margin: 0px 15px;
 }
-.text-clean {
+.btn-clean {
+    background-color: white;
+    border: none;
   color: turquoise;
   text-align: center;
+  cursor: pointer;
 }
 .service_paragraph {
   width: 500px;

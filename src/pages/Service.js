@@ -3,10 +3,23 @@ import '../styles/styles.css'
 import carBlue from '../assets/img/car-blue.PNG';
 import Navbar from '../components/Navbar';
 
+
 const Service = () => {
-    console.log("select")
-    const [select, setSelect] = useState("");
-    const [price, setPrice] = useState("200");
+    const [select, setSelect] = useState("auto");
+    const [info, setInfo] = useState(false);
+
+    const handleChange = (e) => {
+        setSelect(e.target.value)
+        setInfo(true)
+    }
+
+    const cleanInfo = () => {
+        setInfo(false);
+    }
+
+    const auto = "200";
+    const camioneta = "250";
+
     return (
         <>
             <Navbar />
@@ -20,17 +33,20 @@ const Service = () => {
                     <p className="service_paragraph">Lavado exterior realizado con hidrolavadoras a presión de bajo consumo en agua, utilización de jabones biodegradables que no contaminan, ni rayan la pintura del vehiculo. Lavado totalmente amigable con el medio ambiente. </p>
                     <div className="in-row type-transport">
                         <p className="type-transport_type">Tipo de vehículo</p>
-                        <select className="select" name="select" id="select">
+                        <select onChange={(e) => handleChange(e)} className="select" name="select" id="select">
+                            <option value="">Selecciónar</option>
                             <option value="auto">Auto</option>
                             <option value="camioneta">Camioneta o SVU</option>
                         </select>
-                        <p className="text-clean">Limpiar</p>
+                        <button className="btn-clean" onClick={cleanInfo}>Limpiar</button>
                     </div>
                     {
-                        (select) && (
+                        (info) && (
                             <div>
-                                <p>Este precio tiene un descuento promociónal</p>
-                                <p>${price}.00</p>
+                                <p>Este precio tiene un descuento promociónal incluido.</p>
+                                {
+                                    (select === "auto") ? <p>${auto}.00</p> : <p>${camioneta}.00</p>
+                                }
                             </div>
                         )
                     }
