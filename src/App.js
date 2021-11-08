@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Index from './pages/Index';
 import Service from './pages/Service';
 import Work from './pages/Work';
+import FormData from './pages/Data';
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
     <Routes>
       <Route path="/contacto" element={<Contact />} />
       <Route path="/postulaciones" element={<Work />} />
+      <Route path="/lavado" element={<FormData />} />
       <Route path="/servicios" element={<Service />} />
       <Route path="/" element={<Index />} />
     </Routes>
