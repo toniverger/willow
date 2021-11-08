@@ -58,6 +58,52 @@
 }
 
 /*service*/
+.service {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 70vh;
+}
+.service_left {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  height: 80vh;
+}
 .img-car_service {
   align-self: center;
+}
+.service_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  padding: 15px;
+}
+.type-transport {
+  height: auto;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 10px 0px;
+}
+.type-transport_text {
+  color: black;
+  font-weight: 900;
+}
+.select {
+  background-color: transparent;
+  width: 200px;
+  height: 40px;
+  margin: 0px 15px;
+}
+.text-clean {
+  color: turquoise;
+  text-align: center;
+}
+.service_paragraph {
+  width: 500px;
+  height: auto;
+  margin: 15px 0px;
 }
