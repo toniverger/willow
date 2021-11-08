@@ -1,55 +1,63 @@
 * {
-    margin: 0px;
+  margin: 0px;
+}
+/*Globals*/
+.subtitle {
+  color: rgb(99, 232, 232);
+  font-size: 20px;
+}
+.in-row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.in-col {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  align-content: center;
+  justify-content: center;
+}
+.text-gray {
+  color: rgb(118, 116, 116);
+}
+.text-white {
+  color: white;
 }
 .btn-blue {
-    width: 170px;
-    height: 45px;
-    background-color: rgb(32, 211, 218);
-    border: none;
-    color: white;
-    margin: 20px;
+  width: 170px;
+  height: 45px;
+  background-color: rgb(32, 211, 218);
+  border: none;
+  color: white;
+  margin: 20px;
 }
-.content-one {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
+
+/*Home*/
 .texts {
-    width: 700px;
-    padding: 40px;
-    margin-left: 30px;
-    align-self: center;
+  width: 700px;
+  padding: 40px;
+  margin-left: 30px;
+  align-self: center;
+}
+.img-background {
+  align-self: flex-start;
+}
+.img-car {
+  align-self: flex-end;
+}
+.paragraph_rigth {
+  color: gray;
+  font-size: 18px;
+  width: 500px;
+  padding: 80px;
+  text-align: right;
 }
 
-.subtitle {
-    color: rgb(99, 232, 232);
-    font-size: 20px;
-  }
-  
-  .parrap {
-    color: gray;
-    font-size: 18px;
-  }
-  
-  .img-background {
-      align-self: flex-start;
-  }
-
-  .img-car {
-      align-self: flex-end;
-  }
-  .content-two {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-  }
-  
-  .texts-three {
-    width: 500px;
-    padding: 80px;
-    text-align: right;
+/*service*/
+.img-car_service {
+  align-self: center;
 }
