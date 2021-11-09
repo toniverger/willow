@@ -133,3 +133,32 @@
   font-size: 20px;
   font-weight: 400;
 }
+/*contact*/
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 80vh;
+  padding: 0px;
+  margin: 0px;
+}
+.contact-titles {
+  align-self: flex-start;
+  height: 100vh;
+  padding: 40px;
+}
+.contact-subtitle {
+  font-size: 30px;
+  color: turquoise;
+  font-weight: 700;
+}
+
+.contact-form {
+  padding: 40px;
+  align-self: flex-start;
+}
+
+.contact-text {
+  color: rgb(118, 116, 116);
+  margin: 50px 0px;
+}
