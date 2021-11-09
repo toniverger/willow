@@ -24,7 +24,7 @@ const FormContact = () => {
           <textarea placeholder="Dejanos tu mensaje."></textarea>
         </div>
         <div className="contact_in-col">
-          <button className="btn-submit" type="submit">enviar</button>
+          <button className="btn-submit" type="submit">Enviar</button>
         </div>
       </div>
     </form>
