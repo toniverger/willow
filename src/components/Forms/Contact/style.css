@@ -35,3 +35,14 @@ label {
 .emails {
   width: auto;
 }
+.btn-submit {
+  background-color: #f2f2f2;
+  width: auto;
+  height: 30px;
+  padding: 20px;
+  border: 1px solid rgb(146, 146, 146);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

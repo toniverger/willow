@@ -23,6 +23,9 @@ const FormContact = () => {
           <label>Comentario o Mensaje *</label>
           <textarea placeholder="Dejanos tu mensaje."></textarea>
         </div>
+        <div className="contact_in-col">
+          <button className="btn-submit" type="submit">enviar</button>
+        </div>
       </div>
     </form>
   )
