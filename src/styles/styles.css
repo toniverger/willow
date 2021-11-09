@@ -83,10 +83,15 @@
 
 /*service*/
 .service {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
   height: 70vh;
+}
+.service-subtitle {
+  color: #48bbd7;
+  font-size: 20px;
 }
 .service_left {
   display: flex;
@@ -133,6 +138,13 @@
   width: 500px;
   height: auto;
   margin: 15px 0px;
+}
+.price {
+  color: #78a465;
+}
+.car-blue {
+  background-color: teal;
+  height: 400px;
 }
 
 /*Data*/
@@ -189,6 +201,34 @@
 
 /* media query*/
 
+@media screen and (max-width: 1100px) {
+  /*service*/
+  .service {
+    width: 100%;
+    height: auto;
+  }
+  .service_right {
+    width: 80%;
+  }
+  .service_paragraph {
+    width: auto;
+  }
+  .service-subtitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .service {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .service_right {
+    margin-top: 40px;
+  }
+}
+
 @media screen and (max-width: 760px) {
   /*contacto*/
   .contact {
@@ -212,7 +252,15 @@
     align-items: center;
   }
 }
-
+@media screen and (max-width: 600px) {
+ .car-blue {
+   height: 300px;
+   width: auto;
+ } 
+ .service_left {
+   height: auto;
+ }
+}
 @media screen and (max-width: 500px) {
   .contact {
     height: 100vh;
@@ -234,5 +282,20 @@
   }
   .container-data {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .car-blue {
+    height: 270px;
+  }
+  .btn-blue {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .car-blue {
+    height: 200px;
   }
 }

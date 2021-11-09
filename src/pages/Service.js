@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/styles.css'
-import carBlue from '../assets/img/car-blue.PNG';
+import carBlue from '../assets/img/car-blue2.PNG';
 import Navbar from '../components/Navbar';
 
 
@@ -25,10 +25,10 @@ const Service = () => {
             <Navbar />
             <div className="service in-row">
                 <div className="service_left">
-                    <img src={carBlue} alt="auto azul" />
+                    <img className="car-blue" src={carBlue} alt="auto azul" />
                 </div>
                 <div className="service_right">
-                    <h className="subtitle">Lavado</h>
+                    <h className="service-subtitle">Lavado</h>
                     <p className="text-gray"> $200.00 - $250.00</p>
                     <p className="service_paragraph">Lavado exterior realizado con hidrolavadoras a presión de bajo consumo en agua, utilización de jabones biodegradables que no contaminan, ni rayan la pintura del vehiculo. Lavado totalmente amigable con el medio ambiente. </p>
                     <div className="in-row type-transport">
@@ -45,7 +45,7 @@ const Service = () => {
                             <div>
                                 <p>Este precio tiene un descuento promociónal incluido.</p>
                                 {
-                                    (select === "auto") ? <p>${auto}.00</p> : <p>${camioneta}.00</p>
+                                    (select === "auto") ? <p className="price">${auto}.00</p> : <p className="price">${camioneta}.00</p>
                                 }
                             </div>
                         )
