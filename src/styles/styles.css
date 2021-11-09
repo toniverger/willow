@@ -30,7 +30,7 @@
 .btn-blue {
   width: 170px;
   height: 45px;
-  background-color: rgb(32, 211, 218);
+  background-color: #01c1cf;
   border: none;
   color: white;
   margin: 20px;
@@ -101,7 +101,7 @@
 .btn-clean {
   background-color: white;
   border: none;
-  color: turquoise;
+  color: #01c1cf;
   text-align: center;
   cursor: pointer;
 }
