@@ -16,7 +16,7 @@ const FormContact = () => {
       </div>
       <div className="container-data2">
         <div className="contact_in-col emails">
-          <label>Correo electronico *</label>
+          <label>Correo electrónico *</label>
           <input className="input_mail" type="text"></input>
         </div>
         <div className="contact_in-col">
