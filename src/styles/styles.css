@@ -3,7 +3,7 @@
 }
 /*Globals*/
 .subtitle {
-  color: rgb(99, 232, 232);
+  color: #48bbd7;
   font-size: 20px;
 }
 .in-row {
@@ -22,7 +22,7 @@
   justify-content: center;
 }
 .text-gray {
-  color: rgb(118, 116, 116);
+  color: #777777;
 }
 .text-white {
   color: white;
@@ -30,7 +30,7 @@
 .btn-blue {
   width: 170px;
   height: 45px;
-  background-color: rgb(32, 211, 218);
+  background-color: #01c1cf;
   border: none;
   color: white;
   margin: 20px;
@@ -50,7 +50,7 @@
   align-self: flex-end;
 }
 .paragraph_rigth {
-  color: gray;
+  color: #777777;
   font-size: 18px;
   width: 500px;
   padding: 80px;
@@ -101,7 +101,7 @@
 .btn-clean {
   background-color: white;
   border: none;
-  color: turquoise;
+  color: #01c1cf;
   text-align: center;
   cursor: pointer;
 }
@@ -124,12 +124,12 @@
   text-align: center;
 }
 .data_title {
-  color: turquoise;
+  color: #48bbd7;
   font-size: 30px;
   margin: 30px;
 }
 .text-price {
-  color: gray;
+  color: #777777;
   font-size: 20px;
   font-weight: 400;
 }
