@@ -186,3 +186,53 @@
   color: rgb(118, 116, 116);
   margin: 50px 0px;
 }
+
+/* media query*/
+
+@media screen and (max-width: 760px) {
+  /*contacto*/
+  .contact {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact-titles {
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+    height: 100vh;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .form-contact {
+    width: 90%;
+  }
+  .input {
+    width: auto !important;
+  }
+  .input_mail {
+    width: auto;
+  }
+  textarea {
+    width: auto !important;
+  }
+  .container-data {
+    flex-direction: column;
+  }
+}
