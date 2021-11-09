@@ -3,7 +3,7 @@
 }
 /*Globals*/
 .subtitle {
-  color: rgb(99, 232, 232);
+  color: #48bbd7;
   font-size: 20px;
 }
 .in-row {
@@ -124,7 +124,7 @@
   text-align: center;
 }
 .data_title {
-  color: turquoise;
+  color: #48bbd7;
   font-size: 30px;
   margin: 30px;
 }
@@ -149,7 +149,7 @@
 }
 .contact-subtitle {
   font-size: 30px;
-  color: turquoise;
+  color: #48bbd7;
   font-weight: 700;
 }
 
