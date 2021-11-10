@@ -40,7 +40,7 @@ const Index = () => {
                     <button className="btn-blue"><a className="text-white" href="/postulaciones">QUIERO SER PARTE</a></button>
                 </div>
                 <div className="img-car yellow">
-                    <img className="img-draw" className="img-yellow" src={carYellow} alt="auto amarillo" />
+                    <img className="img-yellow img-draw" src={carYellow} alt="auto amarillo" />
                 </div>
             </div>
             <div className="content-four in-row center">
