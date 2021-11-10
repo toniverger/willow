@@ -207,6 +207,31 @@ p {
   margin: 50px 0px;
 }
 
+/*work*/
+.work {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.work_texts {
+ font-weight: 400;
+ color: gray;
+ font-family: initial;
+ font-size: 20px;
+ width: 70%;
+ height: auto;
+ align-self: flex-start;
+ padding: 30px;
+}
+
+.work_form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  align-self: center;
+}
+
 /* media query*/
 @media screen and (max-width: 1555px) {
   .texts-left {
