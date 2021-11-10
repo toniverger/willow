@@ -17,3 +17,9 @@ a {
 .link-nav {
   font-weight: 500;
 }
+.menu {
+  display: none;
+}
+.navbar_link {
+  display: flex;
+}

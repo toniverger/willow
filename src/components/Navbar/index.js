@@ -7,13 +7,16 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <Link to="/">
-            <img src={Logo} alt="logo willow" />
+            <img className="logo-willow" src={Logo} alt="logo willow" />
             </Link>
-        <div>
+        <div className="navbar_link">
             <a className="link-nav" href="/">INICIO</a>
             <a className="link-nav" href="/servicios">SERVICIOS</a>
             <a className="link-nav" href="/postulaciones">QUIERO SER PARTE</a>
             <a className="link-nav" href="/contacto">CONTACTO</a>
+        </div>
+        <div className="menu">
+        <p>Menu</p>
         </div>
         </div>
     )

@@ -273,6 +273,18 @@
   .textarea-service {
     width: 440px;
   }
+  .menu {
+    display: flex;
+    padding: 10px;
+    border: 2px solid #48bbd7;
+    color: #40a7c0;
+  }
+  .navbar_link {
+    display: none;
+  }
+  .contact-titles {
+    margin-top: 60px !important;
+  }
 }
 @media screen and (max-width: 600px) {
  .car-blue {
@@ -285,6 +297,9 @@
  /*data*/
  form {
    width: 100% !important;
+ }
+ .contact-text {
+   margin: 20px 0px;
  }
 }
 @media screen and (max-width: 500px) {
@@ -358,12 +373,23 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 322px) {
   .car-blue {
     height: 200px;
   }
   .contact-text {
-    margin: 20px 0px;
+   margin: 20px 0px;
   }
-  
+  .logo-willow {
+    width: 150px;
+    height: auto;
+  }
+  .menu {
+    display: flex;
+    padding: 5px;
+    border: 2px solid #48bbd7;
+    color: #40a7c0;
+  }
 }
+
+
