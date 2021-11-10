@@ -2,9 +2,13 @@
   margin: 0px;
 }
 /*Globals*/
+p {
+  color: #777777;
+}
 .subtitle {
   color: #48bbd7;
   font-size: 20px;
+  margin: 10px 0px;
 }
 .in-row {
   width: 100%;
@@ -443,6 +447,9 @@
 }
 
 @media screen and (max-width: 380px) {
+  .subtitle {
+    font-size: 18px;
+  }
   .car-blue {
     height: 270px;
   }
@@ -492,12 +499,15 @@
   .texts-left {
     width: auto;
     padding: 20px !important;
+    font-size: 14px;
   }
   .texts-rigth {
     padding: 20px;
+    font-size: 14px;
   }
   .paragraph_right {
     text-align: center;
+    font-size: 14px;
   }
   .img-car-blue {
     display: flex !important;
