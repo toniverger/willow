@@ -25,7 +25,7 @@ const FormPayment = () => {
                 <input className="input-service" placeholder="Nombre Completo" type="text"></input>
                 <input className="input-service" placeholder="Marca" type="text"></input>
                 <input className="input-service" placeholder="Color" type="text"></input>
-                <input className="input-service" placeholder="Matricula" type="text"></input>
+                <input className="input-service" placeholder="Matrícula" type="text"></input>
                 <textarea className="textarea-service" placeholder="Ubicación: Lo más detallada posible."></textarea>
                 <div>
                     <p>Forma de pago </p>
