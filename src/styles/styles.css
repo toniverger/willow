@@ -207,6 +207,12 @@
     width: 60% !important;
     margin-top: 20px;
   }
+  .input_mail {
+    width: 440px !important;
+  }
+  .btn-submit {
+    width: 450px !important;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -264,6 +270,9 @@
     justify-content: center;
     align-items: center;
   }
+  .textarea-service {
+    width: 440px;
+  }
 }
 @media screen and (max-width: 600px) {
  .car-blue {
@@ -292,26 +301,35 @@
     width: auto !important;
   }
   .input_mail {
-    width: auto;
+    width: auto !important;
   }
   textarea {
+    width: auto !important;
+  }
+  .btn-submit {
     width: auto !important;
   }
   .container-data {
     flex-direction: column;
   }
-  /*data*/
-  textarea {
-    width: 380px !important;
+/**/
+.textarea-service {
+  width: 440px !important;
+}
+}
+
+@media screen and (max-width: 483px) {
+  .textarea-service {
+    width: 200px !important;
   }
 }
 
 @media screen and (max-width: 430px) {
   .input {
-    width: 270px !important;
+    width: auto !important;
   }
   textarea {
-    width: 270px !important;
+    width: auto !important;
   }
   
 }
@@ -323,10 +341,29 @@
   .btn-blue {
     width: 200px;
   }
+  .input_mail {
+    width: auto !important;
+  }
+  .btn-submit {
+    width: auto !important;
+  }
+  textarea {
+    width: auto;
+  }
+  .input {
+    width: auto;
+  }
+  .textarea-service {
+    width: 200px !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .car-blue {
     height: 200px;
   }
+  .contact-text {
+    margin: 20px 0px;
+  }
+  
 }
