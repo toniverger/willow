@@ -8,23 +8,24 @@ import carYellow from '../assets/img/auto3-600x466.png';
 import peoples from '../assets/img/peoples.PNG';
 const Index = () => {
     return (
-        <div>
+        <>
             <Navbar />
+        <div className="home">
             <div className="content-one in-row">
                 <div className="texts-left">
                     <p className="subtitle">Lavado de Autos en el Lugar que estacionaste.</p>
                     <p>Willow es totalmente amigable con el medio ambiente, por su bajo consumo en agua en el lavado y la utilización de jabones biodegradables que no contaminan, ni rayan la pintura del vehículo.</p>
                 </div>
-                <div className="img-car">
-                    <img src={carBlue} alt="auto azul" />
+                <div className="img-car img-car-blue">
+                    <img className="img-draw" src={carBlue} alt="auto azul" />
                 </div>
                 <div className="img-background">
-                    <img className="img-backgound" src={background} alt="mancha de agua azul" />
+                    <img className="background" src={background} alt="mancha de agua azul" />
                 </div>
             </div>
             <div className="content-two in-row center">
                 <div className="img-car">
-                    <img src={carPink} alt="auto rosa" />
+                    <img className="img-draw" src={carPink} alt="auto rosa" />
                 </div>
                 <div className="texts-rigth">
                     <p className="subtitle">¿Estas en el trabajo y quieres aprovechar para que te lavemos el auto?</p>
@@ -39,11 +40,11 @@ const Index = () => {
                     <button className="btn-blue"><a className="text-white" href="/postulaciones">QUIERO SER PARTE</a></button>
                 </div>
                 <div className="img-car yellow">
-                    <img className="img-yellow" src={carYellow} alt="auto amarillo" />
+                    <img className="img-draw" className="img-yellow" src={carYellow} alt="auto amarillo" />
                 </div>
             </div>
             <div className="content-four in-row center">
-                <img src={peoples} alt="personas" />
+                <img className="img-draw" src={peoples} alt="personas" />
                 <div className="texts">
                     <p className="subtitle">¿Presisas un lavado?</p>
                     <p className="subtitle">Indicanos donde esta tú auto</p>
@@ -53,6 +54,7 @@ const Index = () => {
             </div>
 
         </div>
+        </>
     )
 }
 

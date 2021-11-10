@@ -80,6 +80,10 @@
   width: 400px;
   height: auto;
 }
+.background {
+  width: 400px;
+  height: auto;
+}
 
 /*service*/
 .service {
@@ -200,6 +204,11 @@
 }
 
 /* media query*/
+@media screen and (max-width: 1555px) {
+  .texts-left {
+    padding-left: 20px;
+  }
+}
 
 @media screen and (max-width: 1210px) {
   /*data*/
@@ -212,6 +221,13 @@
   }
   .btn-submit {
     width: 450px !important;
+  }
+  .texts-left {
+    padding-left: 70px;
+  }
+  .background {
+    width: 200px;
+    height: auto;
   }
 }
 
@@ -230,6 +246,9 @@
   .service-subtitle {
     font-size: 30px;
   }
+  .img-background {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -245,6 +264,28 @@
   /*data*/
   form {
     width: 80% !important;
+  }
+  .texts-left {
+    margin: 0px;
+    padding-left: 30px !important;
+  }
+  .texts-rigth {
+    padding-right: 40px;
+  }
+  .img-draw {
+    width: 400px;
+    height: auto;
+  }
+  .img-yellow {
+    width: 300px !important;
+  }
+  .texts {
+    padding-right: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .paragraph_right {
+    text-align: start;
   }
 }
 
@@ -285,22 +326,33 @@
   .contact-titles {
     margin-top: 60px !important;
   }
+  .texts {
+    padding: 10px;
+  }
+  .texts-rigth {
+    padding-right: 20px;
+    margin-left: 0px;
+  }
+  .img-draw {
+    width: 300px;
+    height: auto;
+  }
 }
 @media screen and (max-width: 600px) {
- .car-blue {
-   height: 300px;
-   width: auto;
- } 
- .service_left {
-   height: auto;
- }
- /*data*/
- form {
-   width: 100% !important;
- }
- .contact-text {
-   margin: 20px 0px;
- }
+  .car-blue {
+    height: 300px;
+    width: auto;
+  }
+  .service_left {
+    height: auto;
+  }
+  /*data*/
+  form {
+    width: 100% !important;
+  }
+  .contact-text {
+    margin: 20px 0px;
+  }
 }
 @media screen and (max-width: 500px) {
   .contact {
@@ -327,10 +379,58 @@
   .container-data {
     flex-direction: column;
   }
-/**/
-.textarea-service {
-  width: 440px !important;
-}
+  .textarea-service {
+    width: 440px !important;
+  }
+
+  /**/
+  .img-car {
+    display: none;
+  }
+
+  .img-yellow {
+    width: 100px;
+    height: auto;
+  }
+  .content-four {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-self: center !important;
+    justify-self: center !important;
+  }
+  .texts {
+    width: auto !important;
+  }
+  .home {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .texts-left {
+    width: auto;
+    padding: 10px;
+  }
+  .texts-rigth {
+    padding: 10px;
+  }
+  .paragraph_right {
+    text-align: center;
+  }
+  .img-car-blue {
+    display: flex !important;
+  }
+  .content-one {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .home {
+    padding-top: 20px;
+  }
+  .content-four {
+    align-items: flex-end;
+  }
 }
 
 @media screen and (max-width: 483px) {
@@ -346,7 +446,6 @@
   textarea {
     width: auto !important;
   }
-  
 }
 
 @media screen and (max-width: 380px) {
@@ -371,14 +470,61 @@
   .textarea-service {
     width: 200px !important;
   }
+  .img-car {
+    display: none;
+  }
+
+  .img-yellow {
+    width: 100px;
+    height: auto;
+  }
+  .content-four {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-self: center !important;
+    justify-self: center !important;
+  }
+  .texts {
+    width: auto !important;
+  }
+  .home {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .texts-left {
+    width: auto;
+    padding: 10px;
+  }
+  .texts-rigth {
+    padding: 10px;
+  }
+  .paragraph_right {
+    text-align: center;
+  }
+  .img-car-blue {
+    display: flex !important;
+  }
+  .content-one {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .home {
+    padding-top: 20px;
+  }
+  .content-four {
+    align-items: flex-end;
+  }
 }
 
-@media screen and (max-width: 322px) {
+@media screen and (max-width: 320px) {
   .car-blue {
     height: 200px;
   }
   .contact-text {
-   margin: 20px 0px;
+    margin: 20px 0px;
   }
   .logo-willow {
     width: 150px;
@@ -391,5 +537,3 @@
     color: #40a7c0;
   }
 }
-
-
