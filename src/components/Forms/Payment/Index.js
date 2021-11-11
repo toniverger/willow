@@ -35,7 +35,7 @@ const FormPayment = () => {
                     <input className="inputRadio" onChange={(e) => handleChange(e)} type="radio" name="metodo" value="tarjeta"></input>
                 </div>
                 {
-                    (payment === "contado") ? <button type="button" onClick={finishPurchase} className="btn-blue">FINALIZAR</button> : <button className="btn-blue"><a className="text-white" href="#">FINALIZAR EN MERCADO PAGO</a></button>
+                    (payment === "contado") ? <button type="button" onClick={finishPurchase} className="btn-blue">FINALIZAR</button> : <button className="btn-blue"><a className="text-white" href="/">FINALIZAR EN MERCADO PAGO</a></button>
                 }
                 {
                     (finish) && (
