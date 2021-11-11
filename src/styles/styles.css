@@ -175,7 +175,7 @@ p {
 .type-service {
   width: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
 
 }
