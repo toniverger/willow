@@ -16,10 +16,15 @@ a {
 
 .link-nav {
   font-weight: 500;
+  font-size: 13px;
 }
 .menu {
   display: none;
 }
 .navbar_link {
   display: flex;
+}
+
+.logo-willow {
+  height: 40px;
 }

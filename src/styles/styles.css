@@ -33,11 +33,12 @@ p {
 }
 .btn-blue {
   width: 170px;
-  height: 45px;
+  height: 40px;
   background-color: #01c1cf;
   border: none;
   color: white;
-  margin: 20px;
+  margin: 20px 0px;
+  border-radius: 4px;
 }
 
 /*Home*/
@@ -45,21 +46,17 @@ p {
   width: 800px;
   padding: 0px;
   margin-left: 30px;
-  align-self: center;
-  padding-left: 200px;
 }
 .texts {
-  width: 700px;
-  padding: 40px;
-  margin-left: 30px;
-  align-self: center;
+  width: 500px;
+  padding: 0px;
+  align-self: flex-start;
 }
 .texts-rigth {
   width: 500px;
-  padding: 40px;
+  padding: 0px 40px;
   margin-left: 30px;
-  align-self: center;
-  padding-right: 200px;
+  align-self: flex-start;
 }
 
 .img-background {
@@ -73,7 +70,7 @@ p {
   color: #777777;
   font-size: 18px;
   width: 500px;
-  padding: 80px;
+  padding-right: 30px;
   text-align: right;
 }
 .img-yellow {
@@ -88,14 +85,33 @@ p {
   width: 400px;
   height: auto;
 }
-
+.content-one {
+  justify-content: center;
+  align-content: flex-start;
+  margin: 60px 0px;
+}
+.content-one_text {
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+}
+.content-three {
+  margin: 60px 0px;
+}
+.content-four {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-direction: row;
+}
 /*service*/
 .service {
   width: 100%;
+  height: fit-content;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 70vh;
+  padding-top: 60px;
 }
 .service-subtitle {
   color: #48bbd7;
@@ -103,7 +119,7 @@ p {
 }
 .service_left {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center;
   width: 50%;
   height: 80vh;
@@ -114,16 +130,19 @@ p {
 .service_right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-start;
+  align-content: flex-start;
   width: 50%;
-  padding: 15px;
 }
 .type-transport {
   height: auto;
   justify-content: flex-start;
   align-content: center;
   margin: 10px 0px;
+}
+.transport_type_p {
+  font-weight: 600;
+  color: black;
 }
 .type-transport_text {
   color: black;
@@ -151,20 +170,26 @@ p {
   color: #78a465;
 }
 .car-blue {
-  background-color: teal;
-  height: 400px;
+  height: 320px;
+}
+.type-service {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
 }
 
 /*Data*/
 .data {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   text-align: justify;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
 }
 .data_title {
@@ -172,7 +197,7 @@ p {
   font-size: 30px;
   margin: 30px;
 }
-.text-price {
+.text_price {
   color: #78a465;
   font-size: 20px;
   font-weight: 400;
@@ -209,8 +234,10 @@ p {
 
 /*work*/
 .work {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: center;
   flex-direction: row;
 }
 
@@ -219,16 +246,15 @@ p {
  color: gray;
  font-family: initial;
  font-size: 20px;
- width: 70%;
+ width: 50%;
  height: auto;
- align-self: flex-start;
- padding: 30px;
+ padding-left: 300px;
 }
 
 .work_form {
+  width: 50%;
   display: flex;
-  justify-content: center;
-  margin: 20px 0px;
+  justify-content: flex-start;
   align-self: center;
 }
 
@@ -361,6 +387,31 @@ p {
     width: 300px;
     height: auto;
   }
+  .work {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .work_texts {
+    width: 90%;
+    text-align: center;
+  }
+  .work_form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-work {
+    flex-direction: column;
+    color: red;
+  }
+  .questions-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 600px) {
   .car-blue {
@@ -375,6 +426,14 @@ p {
   }
   .contact-text {
     margin: 20px 0px;
+  }
+  .work {
+    justify-content: center;
+  }
+  .work_texts {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 500px) {

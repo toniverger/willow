@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/styles.css'
-import carBlue from '../assets/img/car-blue2.PNG';
+import carBlue from '../assets/img/car-blue.PNG';
 import Navbar from '../components/Navbar';
+import Footer from '../components/footer/Index';
 
 
 const Service = () => {
@@ -29,10 +30,10 @@ const Service = () => {
                 </div>
                 <div className="service_right">
                     <h className="service-subtitle">Lavado</h>
-                    <p className="text-gray"> $200.00 - $250.00</p>
+                    <p className="price"> $200.00 - $250.00</p>
                     <p className="service_paragraph">Lavado exterior realizado con hidrolavadoras a presión de bajo consumo en agua, utilización de jabones biodegradables que no contaminan, ni rayan la pintura del vehiculo. Lavado totalmente amigable con el medio ambiente. </p>
                     <div className="in-row type-transport">
-                        <p className="type-transport_type">Tipo de vehículo</p>
+                        <p className="transport_type_p">Tipo de vehículo</p>
                         <select onChange={(e) => handleChange(e)} className="select" name="select" id="select">
                             <option value="">Selecciónar</option>
                             <option value="auto">Auto</option>
@@ -42,7 +43,16 @@ const Service = () => {
                     </div>
                     {
                         (info) && (
+
                             <div>
+                                 <div className="type-service">
+                                    <p>Tipo de servicio</p>
+                                    <select  onChange={(e) => handleChange(e)} className="select" name="select" id="select">
+                                        <option value="">Tipo de servicio</option>
+                                        <option  value="auto">Lavado exterior</option>
+                                        <option disabled value="camioneta">Lavado y Expirado (Próximamente)</option>
+                                    </select>
+                                </div>
                                 <p>Este precio tiene un descuento promociónal incluido.</p>
                                 {
                                     (select === "auto") ? <p className="price">${auto}.00</p> : <p className="price">${camioneta}.00</p>
@@ -51,8 +61,18 @@ const Service = () => {
                         )
                     }
                     <button className="btn-blue"><a className="text-white" href="lavado">Completar Datos</a></button>
+                    {
+                        (info) && (
+                            <div>
+                                {
+                                    (select === "auto") ? <p>Categoría: Autos</p> : <p>Categoría: Camionetas o Svu</p>
+                                }
+                            </div>
+                        )
+                    }
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
