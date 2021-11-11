@@ -14,7 +14,7 @@ const Index = () => {
             <div className="home">
                 <div className="content-one in-row">
                     <div className="content-one_text texts-left">
-                        <p className="subtitle">Lavado de Autos en el Lugar que estacionaste.</p>
+                        <p className="subtitle">Lavado de Autos en el lugar que estacionaste.</p>
                         <p>Willow es totalmente amigable con el medio ambiente, por su bajo consumo en agua en el lavado y la utilización de jabones biodegradables que no contaminan, ni rayan la pintura del vehículo.</p>
                     </div>
                     <div className="img-car img-car-blue">
@@ -48,8 +48,8 @@ const Index = () => {
                 <div className="content-four in-row">
                     <img className="img-draw" src={peoples} alt="personas" />
                     <div className="texts">
-                        <p className="subtitle">¿Presisas un lavado?</p>
-                        <p className="subtitle">Indicanos donde esta tú auto</p>
+                        <p className="subtitle">¿Precisas un lavado?</p>
+                        <p className="subtitle2">Indicanos donde esta tú auto</p>
                         <p>Te invitamos a completar tus datos a través del siguiente link </p>
                         <button className="btn-blue"> <a className="text-white" href="/servicios">SOLICITAR LAVADO</a> </button>
                     </div>
