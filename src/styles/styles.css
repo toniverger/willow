@@ -361,6 +361,31 @@ p {
     width: 300px;
     height: auto;
   }
+  .work {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .work_texts {
+    width: 90%;
+    text-align: center;
+  }
+  .work_form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-work {
+    flex-direction: column;
+    color: red;
+  }
+  .questions-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 600px) {
   .car-blue {
@@ -375,6 +400,14 @@ p {
   }
   .contact-text {
     margin: 20px 0px;
+  }
+  .work {
+    justify-content: center;
+  }
+  .work_texts {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 500px) {
