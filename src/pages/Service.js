@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/styles.css'
-import carBlue from '../assets/img/car-blue2.PNG';
+import carBlue from '../assets/img/car-blue.PNG';
 import Navbar from '../components/Navbar';
+import Footer from '../components/footer/Index';
 
 
 const Service = () => {
@@ -53,6 +54,7 @@ const Service = () => {
                     <button className="btn-blue"><a className="text-white" href="lavado">Completar Datos</a></button>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

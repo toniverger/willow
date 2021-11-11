@@ -109,10 +109,9 @@ p {
 /*service*/
 .service {
   width: 100%;
+  height: fit-content;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 70vh;
+  padding-top: 60px;
 }
 .service-subtitle {
   color: #48bbd7;
@@ -120,7 +119,7 @@ p {
 }
 .service_left {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center;
   width: 50%;
   height: 80vh;
@@ -131,10 +130,9 @@ p {
 .service_right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-start;
+  align-content: flex-start;
   width: 50%;
-  padding: 15px;
 }
 .type-transport {
   height: auto;
@@ -168,20 +166,19 @@ p {
   color: #78a465;
 }
 .car-blue {
-  background-color: teal;
-  height: 400px;
+  height: 320px;
 }
 
 /*Data*/
 .data {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   text-align: justify;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
 }
 .data_title {
@@ -189,7 +186,7 @@ p {
   font-size: 30px;
   margin: 30px;
 }
-.text-price {
+.text_price {
   color: #78a465;
   font-size: 20px;
   font-weight: 400;

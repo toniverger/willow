@@ -6,6 +6,7 @@ import background from '../assets/img/mancha1.png';
 import carPink from '../assets/img/car-pink.PNG';
 import carYellow from '../assets/img/auto3-600x466.png';
 import peoples from '../assets/img/peoples.PNG';
+import Footer from '../components/footer/Index';
 const Index = () => {
     return (
         <>
@@ -55,6 +56,7 @@ const Index = () => {
                 </div>
 
             </div>
+            <Footer />
         </>
     )
 }

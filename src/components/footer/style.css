@@ -1,7 +1,6 @@
 .footer {
     width: 100%;
-    height: auto;
-    padding: 20px;
+    height: 60px;
     background-color: "#222222";
     background-color: rgb(48, 47, 47);
     color: #bbbbbb;
@@ -9,6 +8,4 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: absolute;
-    bottom: 0px;
 }
