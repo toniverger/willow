@@ -2,9 +2,13 @@
   margin: 0px;
 }
 /*Globals*/
+p {
+  color: #777777;
+}
 .subtitle {
-  color: rgb(99, 232, 232);
+  color: #48bbd7;
   font-size: 20px;
+  margin: 10px 0px;
 }
 .in-row {
   width: 100%;
@@ -22,7 +26,7 @@
   justify-content: center;
 }
 .text-gray {
-  color: rgb(118, 116, 116);
+  color: #777777;
 }
 .text-white {
   color: white;
@@ -30,39 +34,72 @@
 .btn-blue {
   width: 170px;
   height: 45px;
-  background-color: rgb(32, 211, 218);
+  background-color: #01c1cf;
   border: none;
   color: white;
   margin: 20px;
 }
 
 /*Home*/
+.texts-left {
+  width: 800px;
+  padding: 0px;
+  margin-left: 30px;
+  align-self: center;
+  padding-left: 200px;
+}
 .texts {
   width: 700px;
   padding: 40px;
   margin-left: 30px;
   align-self: center;
 }
+.texts-rigth {
+  width: 500px;
+  padding: 40px;
+  margin-left: 30px;
+  align-self: center;
+  padding-right: 200px;
+}
+
 .img-background {
   align-self: flex-start;
 }
 .img-car {
   align-self: flex-end;
 }
-.paragraph_rigth {
-  color: gray;
+
+.paragraph_right {
+  color: #777777;
   font-size: 18px;
   width: 500px;
   padding: 80px;
   text-align: right;
 }
+.img-yellow {
+  width: 400px;
+  height: auto;
+}
+.img-background {
+  width: 400px;
+  height: auto;
+}
+.background {
+  width: 400px;
+  height: auto;
+}
 
 /*service*/
 .service {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
   height: 70vh;
+}
+.service-subtitle {
+  color: #48bbd7;
+  font-size: 20px;
 }
 .service_left {
   display: flex;
@@ -101,7 +138,7 @@
 .btn-clean {
   background-color: white;
   border: none;
-  color: turquoise;
+  color: #01c1cf;
   text-align: center;
   cursor: pointer;
 }
@@ -109,6 +146,13 @@
   width: 500px;
   height: auto;
   margin: 15px 0px;
+}
+.price {
+  color: #78a465;
+}
+.car-blue {
+  background-color: teal;
+  height: 400px;
 }
 
 /*Data*/
@@ -124,12 +168,12 @@
   text-align: center;
 }
 .data_title {
-  color: turquoise;
+  color: #48bbd7;
   font-size: 30px;
   margin: 30px;
 }
 .text-price {
-  color: gray;
+  color: #78a465;
   font-size: 20px;
   font-weight: 400;
 }
@@ -149,7 +193,7 @@
 }
 .contact-subtitle {
   font-size: 30px;
-  color: turquoise;
+  color: #48bbd7;
   font-weight: 700;
 }
 
@@ -161,4 +205,369 @@
 .contact-text {
   color: rgb(118, 116, 116);
   margin: 50px 0px;
+}
+
+/*work*/
+.work {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.work_texts {
+ font-weight: 400;
+ color: gray;
+ font-family: initial;
+ font-size: 20px;
+ width: 70%;
+ height: auto;
+ align-self: flex-start;
+ padding: 30px;
+}
+
+.work_form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  align-self: center;
+}
+
+/* media query*/
+@media screen and (max-width: 1555px) {
+  .texts-left {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  form {
+    width: 60% !important;
+    margin-top: 20px;
+  }
+  .input_mail {
+    width: 440px !important;
+  }
+  .btn-submit {
+    width: 450px !important;
+  }
+  .texts-left {
+    padding-left: 70px;
+  }
+  .background {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .service {
+    width: 100%;
+    height: auto;
+  }
+  .service_right {
+    width: 80%;
+  }
+  .service_paragraph {
+    width: auto;
+  }
+  .service-subtitle {
+    font-size: 30px;
+  }
+  .img-background {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .service {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .service_right {
+    margin-top: 40px;
+  }
+  form {
+    width: 80% !important;
+  }
+  .texts-left {
+    margin: 0px;
+    padding-left: 30px !important;
+  }
+  .texts-rigth {
+    padding-right: 40px;
+  }
+  .img-draw {
+    width: 400px;
+    height: auto;
+  }
+  .img-yellow {
+    width: 300px !important;
+  }
+  .texts {
+    padding-right: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .paragraph_right {
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .contact {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact-titles {
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textarea-service {
+    width: 440px;
+  }
+  .menu {
+    display: flex;
+    padding: 10px;
+    border: 2px solid #48bbd7;
+    color: #40a7c0;
+  }
+  .navbar_link {
+    display: none;
+  }
+  .contact-titles {
+    margin-top: 60px !important;
+  }
+  .texts {
+    padding: 30px;
+  }
+  .texts-rigth {
+    padding-right: 20px;
+    margin-left: 0px;
+  }
+  .img-draw {
+    width: 300px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .car-blue {
+    height: 300px;
+    width: auto;
+  }
+  .service_left {
+    height: auto;
+  }
+  form {
+    width: 100% !important;
+  }
+  .contact-text {
+    margin: 20px 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact {
+    height: 100vh;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .form-contact {
+    width: 90%;
+  }
+  .input {
+    width: auto !important;
+  }
+  .input_mail {
+    width: auto !important;
+  }
+  textarea {
+    width: auto !important;
+  }
+  .btn-submit {
+    width: auto !important;
+  }
+  .container-data {
+    flex-direction: column;
+  }
+  .textarea-service {
+    width: 440px !important;
+  }
+  .img-car {
+    display: none;
+  }
+  .img-yellow {
+    width: 100px;
+    height: auto;
+  }
+  .content-four {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-self: center !important;
+    justify-self: center !important;
+  }
+  .texts {
+    width: auto !important;
+  }
+  .home {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .texts-left {
+    width: auto;
+    padding: 20px;
+  }
+  .texts-rigth {
+    padding: 20px;
+  }
+  .paragraph_right {
+    text-align: center;
+  }
+  .img-car-blue {
+    display: flex !important;
+  }
+  .content-one {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .home {
+    padding-top: 20px;
+  }
+  .content-four {
+    align-items: flex-end;
+  }
+  .logo-willow {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .textarea-service {
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .input {
+    width: auto !important;
+  }
+  textarea {
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .subtitle {
+    font-size: 18px;
+  }
+  .car-blue {
+    height: 270px;
+  }
+  .btn-blue {
+    width: 200px;
+  }
+  .input_mail {
+    width: auto !important;
+  }
+  .btn-submit {
+    width: auto !important;
+  }
+  textarea {
+    width: auto;
+  }
+  .input {
+    width: auto;
+  }
+  .textarea-service {
+    width: 200px !important;
+  }
+  .img-car {
+    display: none;
+  }
+
+  .img-yellow {
+    width: 100px;
+    height: auto;
+  }
+  .content-four {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-self: center !important;
+    justify-self: center !important;
+  }
+  .texts {
+    width: auto !important;
+    padding: 20px !important;
+  }
+  .home {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .texts-left {
+    width: auto;
+    padding: 20px !important;
+    font-size: 14px;
+  }
+  .texts-rigth {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .paragraph_right {
+    text-align: center;
+    font-size: 14px;
+  }
+  .img-car-blue {
+    display: flex !important;
+  }
+  .content-one {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .home {
+    padding-top: 20px;
+  }
+  .content-four {
+    align-items: flex-end;
+  }
+  .logo-willow {
+    width: 150px;
+    height: max-content;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .car-blue {
+    height: 200px;
+  }
+  .contact-text {
+    margin: 20px 0px;
+  }
+  .logo-willow {
+    width: 150px;
+    height: auto;
+  }
+  .menu {
+    display: flex;
+    padding: 5px;
+    border: 2px solid #48bbd7;
+    color: #40a7c0;
+  }
 }

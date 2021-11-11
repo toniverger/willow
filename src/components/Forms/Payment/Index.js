@@ -22,11 +22,11 @@ const FormPayment = () => {
     return (
         <div>
             <form>
-                <input className="input" placeholder="Nombre Completo" type="text"></input>
-                <input className="input" placeholder="Marca" type="text"></input>
-                <input className="input" placeholder="Color" type="text"></input>
-                <input className="input" placeholder="Matricula" type="text"></input>
-                <textarea placeholder="Ubicación: Lo más detallada posible."></textarea>
+                <input className="input-service" placeholder="Nombre Completo" type="text"></input>
+                <input className="input-service" placeholder="Marca" type="text"></input>
+                <input className="input-service" placeholder="Color" type="text"></input>
+                <input className="input-service" placeholder="Matrícula" type="text"></input>
+                <textarea className="textarea-service" placeholder="Ubicación: Lo más detallada posible."></textarea>
                 <div>
                     <p>Forma de pago </p>
                     <label>Al contado </label>

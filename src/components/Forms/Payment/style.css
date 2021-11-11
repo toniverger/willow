@@ -8,8 +8,8 @@ form {
     color: grey;
     display: inline-block;
 }
-.input {
-    background-color: rgb(242, 242, 242);
+.input-service {
+    background-color: #f2f2f2;
     width: 200px;
     height: 30px;
     padding: 10px;
@@ -17,8 +17,8 @@ form {
     margin: 10px;
 }
 
-textarea {
-    background-color: rgb(242, 242, 242);
+.textarea-service {
+    background-color: #f2f2f2;
     width: 440px;
     height: 100px;
     padding: 10px;

@@ -16,12 +16,15 @@ const FormContact = () => {
       </div>
       <div className="container-data2">
         <div className="contact_in-col emails">
-          <label>Correo electronico *</label>
+          <label>Correo electrónico *</label>
           <input className="input_mail" type="text"></input>
         </div>
         <div className="contact_in-col">
           <label>Comentario o Mensaje *</label>
           <textarea placeholder="Dejanos tu mensaje."></textarea>
+        </div>
+        <div className="contact_in-col">
+          <button className="btn-submit" type="submit">Enviar</button>
         </div>
       </div>
     </form>
