@@ -140,6 +140,10 @@ p {
   align-content: center;
   margin: 10px 0px;
 }
+.transport_type_p {
+  font-weight: 600;
+  color: black;
+}
 .type-transport_text {
   color: black;
   font-weight: 900;
@@ -167,6 +171,13 @@ p {
 }
 .car-blue {
   height: 320px;
+}
+.type-service {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
 }
 
 /*Data*/
@@ -223,8 +234,10 @@ p {
 
 /*work*/
 .work {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: center;
   flex-direction: row;
 }
 
@@ -233,16 +246,15 @@ p {
  color: gray;
  font-family: initial;
  font-size: 20px;
- width: 70%;
+ width: 50%;
  height: auto;
- align-self: flex-start;
- padding: 30px;
+ padding-left: 300px;
 }
 
 .work_form {
+  width: 50%;
   display: flex;
-  justify-content: center;
-  margin: 20px 0px;
+  justify-content: flex-start;
   align-self: center;
 }
 
