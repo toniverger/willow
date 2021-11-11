@@ -128,20 +128,21 @@ p {
 /*service*/
 .service {
   width: 100%;
-  height: fit-content;
+  height: calc(100vh - 180px);
   display: flex;
   padding-top: 60px;
 }
 .service-subtitle {
   color: #48bbd7;
-  font-size: 20px;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 25px;
 }
 .service_left {
   display: flex;
   justify-content: flex-end;
   align-content: center;
   width: 50%;
-  height: 80vh;
 }
 .img-car_service {
   align-self: center;
@@ -161,7 +162,9 @@ p {
 }
 .transport_type_p {
   font-weight: 600;
-  color: black;
+  font-size: 14px;
+  color: #333333;
+  margin: auto 0px;
 }
 .type-transport_text {
   color: black;
@@ -172,6 +175,10 @@ p {
   width: 200px;
   height: 40px;
   margin: 0px 15px;
+  border-radius: 1px !important;
+  border-color: #ccc !important;
+  color: #777777 !important;
+  padding: 0px 5px
 }
 .btn-clean {
   background-color: white;
@@ -187,6 +194,7 @@ p {
 }
 .price {
   color: #78a465;
+  font-weight: 500;
 }
 .car-blue {
   height: 320px;
@@ -196,7 +204,10 @@ p {
   display: flex;
   justify-content: flex-start;
   align-content: center;
-
+  margin-bottom: 25px;
+}
+.type-service > p {
+  margin: auto 0px;
 }
 
 /*Data*/
