@@ -46,7 +46,7 @@ const Service = () => {
 
                             <div>
                                  <div className="type-service">
-                                    <p>Tipo de servicio</p>
+                                    <p class="transport_type_p">Tipo de servicio </p>
                                     <select  onChange={(e) => handleChange(e)} className="select" name="select" id="select">
                                         <option value="">Tipo de servicio</option>
                                         <option  value="auto">Lavado exterior</option>
@@ -61,15 +61,6 @@ const Service = () => {
                         )
                     }
                     <button className="btn-blue"><a className="text-white" href="lavado">Completar Datos</a></button>
-                    {
-                        (info) && (
-                            <div>
-                                {
-                                    (select === "auto") ? <p>Categoría: Autos</p> : <p>Categoría: Camionetas o Svu</p>
-                                }
-                            </div>
-                        )
-                    }
                 </div>
             </div>
             <Footer />
