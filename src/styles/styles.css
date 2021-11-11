@@ -33,11 +33,12 @@ p {
 }
 .btn-blue {
   width: 170px;
-  height: 45px;
+  height: 40px;
   background-color: #01c1cf;
   border: none;
   color: white;
-  margin: 20px;
+  margin: 20px 0px;
+  border-radius: 4px;
 }
 
 /*Home*/
@@ -45,21 +46,17 @@ p {
   width: 800px;
   padding: 0px;
   margin-left: 30px;
-  align-self: center;
-  padding-left: 200px;
 }
 .texts {
-  width: 700px;
-  padding: 40px;
-  margin-left: 30px;
-  align-self: center;
+  width: 500px;
+  padding: 0px;
+  align-self: flex-start;
 }
 .texts-rigth {
   width: 500px;
-  padding: 40px;
+  padding: 0px 40px;
   margin-left: 30px;
-  align-self: center;
-  padding-right: 200px;
+  align-self: flex-start;
 }
 
 .img-background {
@@ -73,7 +70,7 @@ p {
   color: #777777;
   font-size: 18px;
   width: 500px;
-  padding: 80px;
+  padding-right: 30px;
   text-align: right;
 }
 .img-yellow {
@@ -88,7 +85,27 @@ p {
   width: 400px;
   height: auto;
 }
-
+.content-one {
+  justify-content: center;
+  align-content: flex-start;
+  margin: 60px 0px;
+}
+.content-one_text {
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+}
+.content-three {
+  margin: 60px 0px;
+}
+.content-four {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-direction: row;
+}
 /*service*/
 .service {
   width: 100%;
