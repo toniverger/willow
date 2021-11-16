@@ -687,10 +687,14 @@ p {
   }
 }
 
+.whatsapp-link {
+  text-decoration: none;
+}
+
 .whatsapp-icon {
   width: 70px;
   height: auto;
   position: fixed;
-  bottom: 80px;
-  right: 50px;
+  bottom: 30px;
+  right: 30px;
 }

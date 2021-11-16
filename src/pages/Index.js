@@ -97,7 +97,9 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <img class="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
+      <a class="whatsapp-link" href="//api.whatsapp.com/send?phone=+59898795475&text=Hola, me gustaría contratar el servicio de Willow" target="_blank" rel="noreferrer">
+        <img class="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
+      </a>
       <Footer />
     </>
   );
