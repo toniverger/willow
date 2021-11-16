@@ -9,8 +9,6 @@ const FormWork = () => {
             ...answers,
             [e.target.name]: e.target.value,
         })
-
-        console.log(answers)
     }
     return (
         <>
