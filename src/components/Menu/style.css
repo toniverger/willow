@@ -9,13 +9,6 @@
     align-items: center;
     position: initial;
 }
-.containerIconMenu {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-}
 
 .container-menu {
     width: 100%;
@@ -28,13 +21,4 @@
     justify-content: center;
     align-items: center;
     background-color: #51bad5;
-}
-
-.btn-menu {
-    width: 70px;
-    height: 30px;
-    background-color: #48bbd7;
-    padding-left: 5px;
-    border: none;
-    color: white;
 }

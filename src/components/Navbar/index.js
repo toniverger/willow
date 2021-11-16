@@ -22,8 +22,13 @@ const Navbar = () => {
                 <a className="link-nav" href="/postulaciones">QUIERO SER PARTE</a>
                 <a className="link-nav" href="/contacto">CONTACTO</a>
             </div>
-            <div className="menu" onClick={handleMenu}>
-                <Menu open={open} onClick={handleMenu} />
+            <div className="menu">
+                <div className="containerIconMenu">
+                    <button onClick={handleMenu} className="btn-menu">
+                        Menu
+                    </button>
+                </div>
+                <Menu open={open} />
             </div>
         </div>
     )
