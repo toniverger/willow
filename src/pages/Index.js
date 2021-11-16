@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "../styles/styles.css";
 import carBlue from "../assets/img/car-blue.PNG";
-import background from '../assets/img/mancha1.png';
+import background from "../assets/img/mancha1.png";
 import carPink from "../assets/img/car-pink.PNG";
 import carYellow from "../assets/img/auto3-600x466.png";
 import peoples from "../assets/img/peoples.PNG";
@@ -11,6 +11,13 @@ const Index = () => {
   return (
     <>
       <Navbar />
+      <div className="img-background">
+        <img
+          className="background"
+          src={background}
+          alt="mancha de agua azul"
+        />
+      </div>
       <div className="home">
         <div className="content-one in-row">
           <div className="content-one_text texts-left">
@@ -27,17 +34,10 @@ const Index = () => {
           <div className="img-car img-car-blue">
             <img className="img-draw" src={carBlue} alt="auto azul" />
           </div>
-          <div className="img-background">
-            <img
-              className="background"
-              src={background}
-              alt="mancha de agua azul"
-            />
-          </div>
         </div>
         <div className="content-two in-row center">
           <div className="img-car">
-            <img className="img-draw" src={carPink} alt="auto rosa" />
+            <img className="img-draw middle" src={carPink} alt="auto rosa" />
           </div>
           <div className="texts-rigth">
             <p className="subtitle">
@@ -56,29 +56,7 @@ const Index = () => {
             </button>
           </div>
         </div>
-        <div className="content-three in-row center">
-          <div className="texts paragraph_right">
-            <p className="subtitle">¿Quieres ser uno de nuestros lavadores?</p>
-            <p>
-              Queremos conocerte mejor, te invitamos a completar tus datos en el
-              siguiente boton.{" "}
-            </p>
-            <button className="btn-blue">
-              <a className="text-white" href="/postulaciones">
-                QUIERO SER PARTE
-              </a>
-            </button>
-          </div>
-          <div className="img-car yellow">
-            <img
-              className="img-yellow img-draw"
-              src={carYellow}
-              alt="auto amarillo"
-            />
-          </div>
-        </div>
         <div className="content-four in-row">
-          <img className="img-draw" src={peoples} alt="personas" />
           <div className="texts">
             <p className="subtitle">¿Precisas un lavado?</p>
             <p className="subtitle2">Indicanos donde esta tú auto</p>
@@ -90,6 +68,28 @@ const Index = () => {
               <a className="text-white" href="/servicios">
                 SOLICITAR LAVADO
               </a>{" "}
+            </button>
+          </div>
+          <img className="img-draw" src={peoples} alt="personas" />
+        </div>
+        <div className="content-three in-row center">
+          <div className="img-car yellow">
+            <img
+              className="img-yellow img-draw"
+              src={carYellow}
+              alt="auto amarillo"
+            />
+          </div>
+          <div className="texts paragraph_right">
+            <p className="subtitle">¿Quieres ser uno de nuestros lavadores?</p>
+            <p>
+              Queremos conocerte mejor, te invitamos a completar tus datos en el
+              siguiente boton.{" "}
+            </p>
+            <button className="btn-blue">
+              <a className="text-white" href="/postulaciones">
+                QUIERO SER PARTE
+              </a>
             </button>
           </div>
         </div>
