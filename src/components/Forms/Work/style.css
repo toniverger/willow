@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 .textarea-work {
-    width: 300px;
+    width: 300px !important;
 }
 .questions-checkbox {
     flex-direction: row;
@@ -37,7 +37,6 @@
 .questions-work_option {
     margin: 10px 0px;
     padding-left: 10px;
-    padding-left: 20px;
     height: 100px;
 }
 .label-option {
