@@ -97,7 +97,10 @@ p {
   height: auto;
 }
 .background {
-  width: 400px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 20%;
   height: auto;
 }
 .content-one {
@@ -308,10 +311,6 @@ p {
   }
   .texts-left {
     padding-left: 70px;
-  }
-  .background {
-    width: 200px;
-    height: auto;
   }
 }
 
