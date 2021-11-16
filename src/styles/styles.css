@@ -440,6 +440,14 @@ p {
     justify-content: center;
     align-items: center;
   }
+  .service {
+    padding-top: 0px;
+  }
+  .service_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 600px) {
   .car-blue {
@@ -565,6 +573,9 @@ p {
   .data {
     height: auto;
   }
+  .car-blue {
+    height: 250px;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -581,7 +592,7 @@ p {
     font-size: 18px;
   }
   .car-blue {
-    height: 270px;
+    height: 200px;
   }
   .btn-blue {
     width: 200px;
@@ -660,7 +671,7 @@ p {
 
 @media screen and (max-width: 320px) {
   .car-blue {
-    height: 200px;
+    height: 150px;
   }
   .contact-text {
     margin: 20px 0px;

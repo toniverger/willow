@@ -15,7 +15,6 @@ const FormPayment = () => {
     }
 
     const completeDatas = () => {
-        console.log("hacer verificacion");
         setFinish(true);
     }
 
