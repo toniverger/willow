@@ -131,7 +131,7 @@ p {
 /*service*/
 .service {
   width: 100%;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 202px);
   display: flex;
   padding-top: 60px;
 }
@@ -246,13 +246,12 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  height: 80vh;
+  height: calc(100vh - 142px);
   padding: 0px;
   margin: 0px;
 }
 .contact-titles {
   align-self: flex-start;
-  height: 100vh;
   padding: 40px;
 }
 .contact-subtitle {
@@ -698,5 +697,23 @@ p {
     display: flex;
     padding: 5px;
     color: #40a7c0;
+  }
+}
+
+.whatsapp-link {
+  text-decoration: none;
+}
+
+.whatsapp-icon {
+  width: 70px;
+  height: auto;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .whatsapp-icon {
+    width: 50px;
   }
 }

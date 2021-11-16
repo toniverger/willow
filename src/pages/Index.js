@@ -7,6 +7,9 @@ import carPink from "../assets/img/car-pink.PNG";
 import carYellow from "../assets/img/auto3-600x466.png";
 import peoples from "../assets/img/peoples.PNG";
 import Footer from "../components/footer/Index";
+
+import WhatsappIcon from "../assets/img/WhatsApp.png"
+
 const Index = () => {
   return (
     <>
@@ -94,6 +97,9 @@ const Index = () => {
           </div>
         </div>
       </div>
+      <a class="whatsapp-link" href="//api.whatsapp.com/send?phone=+59898795475&text=Hola, me gustaría contratar el servicio de Willow" target="_blank" rel="noreferrer">
+        <img class="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
+      </a>
       <Footer />
     </>
   );

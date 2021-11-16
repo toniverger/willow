@@ -42,13 +42,14 @@ label {
   width: auto;
 }
 .btn-submit {
-  background-color: #45bbd5;
+  background-color: #01c1cf;
   width: auto;
   height: 30px;
   padding: 20px;
   border: none;
   border-radius: 3px;
   color: white;
+  font-weight: 600;
   margin: 10px;
   display: flex;
   justify-content: center;
