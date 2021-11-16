@@ -395,6 +395,7 @@ p {
     display: flex;
     padding: 5px;
     color: #40a7c0;
+    justify-content: center;
   }
   .navbar_link {
     display: none;
