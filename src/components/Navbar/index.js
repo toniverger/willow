@@ -4,6 +4,8 @@ import './style.css';
 import Logo from '../../assets/img/cropped-logo-willow1h-ch.png';
 import { Link } from 'react-router-dom';
 import Menu from '../Menu/Index';
+import MenuIcon from '../../assets/img/menuIcon.png'
+
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
@@ -24,9 +26,7 @@ const Navbar = () => {
             </div>
             <div className="menu">
                 <div className="containerIconMenu">
-                    <button onClick={handleMenu} className="btn-menu">
-                        Menu
-                    </button>
+                        <img className="icon" onClick={handleMenu} src={MenuIcon} alt="menu icon"/>
                 </div>
                 <Menu open={open} />
             </div>
