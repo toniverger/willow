@@ -12,8 +12,8 @@ const FormData = () => {
             <Navbar />
             <div className="data">
                 <p className="data_title">Completa tus datos</p>
-                <p>Has seleccionado la categoria:  {select}</p>
-                Total a pagar:
+                <p className="data_texts">Has seleccionado la categoría:  {select}</p>
+                <p className="data_texts">Total a pagar </p>
                 <p className="text_price">{price}$</p>
                 <FormPayment />
             </div>

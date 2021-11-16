@@ -8,9 +8,9 @@ p {
 }
 .subtitle {
   color: #48bbd7;
-  font-size: 20px;
+  font-size: 30px;
   margin: 0px 0px 20px 0px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .subtitle2 {
@@ -137,8 +137,8 @@ p {
 }
 .service-subtitle {
   color: #48bbd7;
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 700;
   margin-bottom: 25px;
 }
 .service_left {
@@ -229,6 +229,12 @@ p {
   color: #48bbd7;
   font-size: 30px;
   margin: 30px;
+  font-weight: 700;
+}
+.data_texts {
+  font-size: 20px;
+  font-weight: 400;
+  color: #777777;
 }
 .text_price {
   color: #78a465;
