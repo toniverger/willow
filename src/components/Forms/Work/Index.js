@@ -41,34 +41,34 @@ const FormWork = () => {
         <>
             <form className="form-work">
                 <div className="questions-work">
-                    <label className="requiered">Nombre completo: <span>*</span>  </label>
+                    <label className="requiered">NOMBRE COMPLETO: <span>*</span>  </label>
                     <input required className="input-work" type="text"></input>
                 </div>
                 <div className="questions-work">
-                    <label className="requiered">Fecha de nacimiento: * </label>
-                    <input required className="input-work" type="text"></input>
+                    <label className="requiered">FECHA DE NACIMIENTO: <span>*</span>  </label>
+                    <input required className="input-work" type="text" placeholder="formato dd/mm/aaaa"></input>
                 </div>
                 <div className="questions-work">
-                    <label className="requiered">Estado civil: *</label>
+                    <label className="requiered">ESTADO CIVIL: <span>*</span> </label>
                     <input required className="input-work" type="text"></input>
                 </div>
                 <div className="questions-work_option">
-                    <label className="label-option">Tienes hijos: </label>
+                    <label className="label-option">TIENES HIJOS:  <span>*</span> </label>
                     <div className="questions-checkbox">
-                        <input className="inputRadio" type="radio"></input>
+                        <input required className="inputRadio" type="radio"></input>
                         <label>Si</label>
                     </div>
                     <input className="inputRadio" type="radio"></input>
                     <label>No</label>
                 </div>
                 <div className="questions-work">
-                    <label>Correo electrónico: </label>
+                    <label>CORREO ELECTRÓNICO: <span>*</span> </label>
                     <input required type="mail" className="input-work"></input>
                 </div>
                 <div className="questions-work">
-                    <label>Departamento: </label>
+                    <label>DEPARTAMENTO: </label>
                     <select
-                    required
+                        required
                         label="departamento"
                         className="select-work"
                     >
@@ -82,9 +82,8 @@ const FormWork = () => {
                         ))}
                     </select>
                 </div>
-
                 <div className="questions-work">
-                    <label className="requiered">Barrio: *</label>
+                    <label className="requiered">BARRIO: <span>*</span> </label>
                     <select
                         required
                         label="departamento"
@@ -101,7 +100,18 @@ const FormWork = () => {
                     </select>
                 </div>
                 <div>
-                    <label>¿Tienes celular? </label>
+                    <label>¿TÍENES CELULAR? <span>*</span> </label>
+                    <div className="questions-checkbox">
+                        <input required className="inputRadio" type="radio"></input>
+                        <label>Si</label>
+                    </div>
+                    <div className="questions-checkbox">
+                        <input required className="inputRadio" type="radio"></input>
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label className="label-work">¿ACCESO A INTERNET DESDE EL CELULARr? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input className="inputRadio" type="radio"></input>
                         <label>Si</label>
@@ -112,18 +122,7 @@ const FormWork = () => {
                     </div>
                 </div>
                 <div>
-                    <label className="label-work">¿Acceso a internet desde tu celular? </label>
-                    <div className="questions-checkbox">
-                        <input className="inputRadio" type="radio"></input>
-                        <label>Si</label>
-                    </div>
-                    <div className="questions-checkbox">
-                        <input className="inputRadio" type="radio"></input>
-                        <label>No</label>
-                    </div>
-                </div>
-                <div>
-                    <label>¿Tiene mono tributo?</label>
+                    <label>¿TIENE MONOTRIBUTO? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input className="inputRadio" type="radio"></input>
                         <label>Si</label>
@@ -134,11 +133,11 @@ const FormWork = () => {
                     </div>
                 </div>
                 <div className="questions-work">
-                    <label>Disponibilidad horaria</label>
+                    <label>DISPONIBILIDAD HORARIA <span>*</span> </label>
                     <input className="input-work"></input>
                 </div>
                 <div>
-                    <label className="label-work">¿Querría trabajar fines de semana?</label>
+                    <label className="label-work">¿QUERRÍA TRABAJAR FINES DE SEMANA? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input className="inputRadio" type="checkbox"></input>
                         <label>Si</label>
@@ -149,7 +148,7 @@ const FormWork = () => {
                     </div>
                 </div>
                 <div>
-                    <label>¿Prefiere 4 o 6 horas?</label>
+                    <label>¿PREFIERE 4 O 6 HORAS? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input className="inputRadio" type="checkbox"></input>
                         <label>4 Horas</label>
@@ -160,7 +159,7 @@ const FormWork = () => {
                     </div>
                 </div>
                 <div>
-                    <label>¿Prefiere mañana o tarde?</label>
+                    <label>¿PREFIERE MAÑANA O TARDE? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input className="inputRadio" type="checkbox"></input>
                         <label>Mañana</label>
@@ -171,7 +170,7 @@ const FormWork = () => {
                     </div>
                 </div>
                 <div>
-                    <label>¿Tiene transporte propio?</label>
+                    <label>¿TIENE TRANSPORTE PROPIO? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input className="inputRadio" type="checkbox"></input>
                         <label>Si</label>
@@ -182,36 +181,41 @@ const FormWork = () => {
                     </div>
                 </div>
                 <div className="questions-work">
-                    <label>¿Libreta de moto?</label>
+                    <label>¿LIBRETA DE MOTO? <span>*</span> </label>
                     <input required className="input-work"></input>
                 </div>
                 <div>
-                    <label>Formación:</label>
-                    {/**primaria completa, secundaria */}
+                    <label>FORMACIÓN: <span>*</span> </label>
+                    <select className="select-work" key="0" value="selected">
+                        <option>Primaria incompleta</option>
+                        <option>Primaria completa</option>
+                        <option>Secundaria incompleta</option>
+                        <option>Secundaria completa</option>
+                    </select>
                 </div>
-                <div>
-                    <label className="label-work">Mencione cursos que haya hecho y le hayan gustado: </label>
+                <div className="questions-work">
+                    <label className="label-work">MENCIONE CURSOS QUE HAYA HECHO Y LE HAYAN GUSTADO: </label>
                     <input required className="input-work"></input>
                 </div>
                 <div className="questions-work">
-                    <label>Intereses y preferencias: </label>
+                    <label>INTERESES Y PREFERENCIAS: <span>*</span> </label>
                     <input type="text" className="input-work"></input>
                 </div>
                 <div className="questions-work">
-                    <label>Hobbies: </label>
+                    <label>HOBBIES: <span>*</span> </label>
                     <input className="input-work" type="text"></input>
                 </div>
-                <div>
-                    <label className="label-work">Contanos en un video algo más de vos.</label>
+                <div className="questions-work">
+                    <label className="label-work">CONTANOS EN UN VIDEO ALGO MÁS DE VOS.</label>
                     <p className="label-work">Subí un video a Youtube, facebook, instagram. </p>
                     <input type="text" className="input-work" placeholder="Pega aqui su link (No obligatorio)"></input>
                 </div>
                 <div className="questions-work">
-                    <label>Aclaraciónes: </label>
+                    <label>ACLARACIÓNES: </label>
                     <textarea required className="textarea-work" placeholder="Aqui puede escribir alguna aclaración de la que quiera con respecto al formulario o a usted..."></textarea>
                 </div>
                 <div className="questions-work">
-                    <label>Texto de una sola linea:</label>
+                    <label>TEXTO DE UNA SOLA LINEA:</label>
                     <input required className="input-work"></input>
                 </div>
                 <div className="questions-work">
