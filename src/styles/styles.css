@@ -290,6 +290,13 @@ p {
  padding-left: 300px;
 }
 
+.work_subtitle {
+  color: #48bbd7;
+  font-size: 30px;
+  margin: 0px 0px 20px 0px;
+  font-weight: 700;
+}
+
 .work_form {
   width: 50%;
   display: flex;
