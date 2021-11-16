@@ -20,6 +20,8 @@ const Service = () => {
 
     const cleanInfo = () => {
         setViewSelect(false);
+        setSelectVehicle(null)
+        setTypeService(null)
     }
 
     const auto = "200";
@@ -39,7 +41,7 @@ const Service = () => {
                     <div className="in-row type-transport">
                         <p className="transport_type_p">Tipo de vehículo</p>
                         <select onChange={(e) => handleChangeVehicle(e)} className="select" name="select" id="select">
-                            <option value="">Selecciónar</option>
+                            <option value="seleccion">Selecciónar</option>
                             <option value="auto">Auto</option>
                             <option value="camioneta">Camioneta o SVU</option>
                         </select>
@@ -56,17 +58,17 @@ const Service = () => {
                                         <option disabled value="camioneta">Lavado y Apirado (Próximamente)</option>
                                     </select>
                                 </div>
-                            </div>
-                        )
-                    }
-                    {
-                        (typeService) && (
-                            <>
-                                <p>Este precio tiene un descuento promociónal incluido.</p>
                                 {
-                                    (selectVehicle === "auto") ? <p className="price">${auto}.00</p> : <p className="price">${camioneta}.00</p>
+                                    (typeService) && (
+                                        <>
+                                            <p>Este precio tiene un descuento promociónal incluido.</p>
+                                            {
+                                                (selectVehicle === "auto") ? <p className="price">${auto}.00</p> : <p className="price">${camioneta}.00</p>
+                                            }
+                                        </>
+                                    )
                                 }
-                            </>
+                            </div>
                         )
                     }
                     <button className="btn-blue"><a className="text-white" href="lavado">Completar Datos</a></button>

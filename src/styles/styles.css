@@ -439,6 +439,14 @@ p {
     justify-content: center;
     align-items: center;
   }
+  .service {
+    padding-top: 0px;
+  }
+  .service_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 600px) {
   .car-blue {
