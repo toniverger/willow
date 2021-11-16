@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import './style.css';
 
-
-
 const FormContact = () => {
   const [infoMail, setInfoMail] = useState({});
 
@@ -14,7 +12,7 @@ const FormContact = () => {
   const information = (e) => {
     setInfoMail({
       ...infoMail,
-      [e.target.value]: e.target.value,
+      [e.target.name]: e.target.value,
     })
   }
 
@@ -23,7 +21,7 @@ const FormContact = () => {
       <div className="container-data">
         <div className="contact_in-col">
           <label className="requiered">NOMBRE <span>*</span></label>
-          <input name="name" value={infoMail.name} onClick={(e) => information(e)} required className="input" type="text"></input>
+          <input name="name" value={infoMail.name} onChange={(e) => information(e)} required className="input" type="text"></input>
         </div>
         <div className="contact_in-col">
           <label className="requiered">APELLIDO <span>*</span></label>
