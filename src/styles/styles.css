@@ -131,7 +131,7 @@ p {
 /*service*/
 .service {
   width: 100%;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 202px);
   display: flex;
   padding-top: 60px;
 }
@@ -240,13 +240,12 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  height: 80vh;
+  height: calc(100vh - 142px);
   padding: 0px;
   margin: 0px;
 }
 .contact-titles {
   align-self: flex-start;
-  height: 100vh;
   padding: 40px;
 }
 .contact-subtitle {
@@ -697,4 +696,10 @@ p {
   position: fixed;
   bottom: 30px;
   right: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .whatsapp-icon {
+    width: 50px;
+  }
 }
