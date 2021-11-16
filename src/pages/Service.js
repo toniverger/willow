@@ -6,16 +6,20 @@ import Footer from '../components/footer/Index';
 
 
 const Service = () => {
-    const [select, setSelect] = useState("auto");
-    const [info, setInfo] = useState(false);
+    const [selectVehicle, setSelectVehicle] = useState("auto");
+    const [viewSelect, setViewSelect] = useState(false);
+    const [typeService, setTypeService] = useState(false);
 
-    const handleChange = (e) => {
-        setSelect(e.target.value)
-        setInfo(true)
+    const handleChangeVehicle = (e) => {
+        setSelectVehicle(e.target.value)
+        setViewSelect(true)
+    }
+    const handleChangeService = () => {
+        setTypeService(true);
     }
 
     const cleanInfo = () => {
-        setInfo(false);
+        setViewSelect(false);
     }
 
     const auto = "200";
@@ -34,7 +38,7 @@ const Service = () => {
                     <p className="service_paragraph">Lavado exterior realizado con hidrolavadoras a presión de bajo consumo en agua, utilización de jabones biodegradables que no contaminan, ni rayan la pintura del vehiculo. Lavado totalmente amigable con el medio ambiente. </p>
                     <div className="in-row type-transport">
                         <p className="transport_type_p">Tipo de vehículo</p>
-                        <select onChange={(e) => handleChange(e)} className="select" name="select" id="select">
+                        <select onChange={(e) => handleChangeVehicle(e)} className="select" name="select" id="select">
                             <option value="">Selecciónar</option>
                             <option value="auto">Auto</option>
                             <option value="camioneta">Camioneta o SVU</option>
@@ -42,22 +46,27 @@ const Service = () => {
                         <button className="btn-clean" onClick={cleanInfo}>Limpiar</button>
                     </div>
                     {
-                        (info) && (
-
+                        (viewSelect) && (
                             <div>
-                                 <div className="type-service">
+                                <div className="type-service">
                                     <p class="transport_type_p">Tipo de servicio </p>
-                                    <select  onChange={(e) => handleChange(e)} className="select" name="select" id="select">
+                                    <select onChange={(e) => handleChangeService(e)} className="select" name="select" id="select">
                                         <option value="">Tipo de servicio</option>
-                                        <option  value="auto">Lavado exterior</option>
-                                        <option disabled value="camioneta">Lavado y Expirado (Próximamente)</option>
+                                        <option value="auto">Lavado exterior</option>
+                                        <option disabled value="camioneta">Lavado y Apirado (Próximamente)</option>
                                     </select>
                                 </div>
+                            </div>
+                        )
+                    }
+                    {
+                        (typeService) && (
+                            <>
                                 <p>Este precio tiene un descuento promociónal incluido.</p>
                                 {
-                                    (select === "auto") ? <p className="price">${auto}.00</p> : <p className="price">${camioneta}.00</p>
+                                    (selectVehicle === "auto") ? <p className="price">${auto}.00</p> : <p className="price">${camioneta}.00</p>
                                 }
-                            </div>
+                            </>
                         )
                     }
                     <button className="btn-blue"><a className="text-white" href="lavado">Completar Datos</a></button>
