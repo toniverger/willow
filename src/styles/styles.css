@@ -686,3 +686,11 @@ p {
     color: #40a7c0;
   }
 }
+
+.whatsapp-icon {
+  width: 70px;
+  height: auto;
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+}
