@@ -389,9 +389,10 @@ p {
   .contact-titles {
     padding: 0px;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     width: 100%;
     height: auto;
+    margin-left: 10px;
   }
   .contact-form {
     width: 100%;
