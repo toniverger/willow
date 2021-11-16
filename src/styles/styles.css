@@ -262,7 +262,7 @@ p {
 
 .contact-text {
   color: rgb(118, 116, 116);
-  margin: 50px 0px;
+  margin: 20px 0px;
 }
 
 /*work*/
@@ -369,7 +369,7 @@ p {
 @media screen and (max-width: 760px) {
   .contact {
     padding: 20px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
   }
@@ -401,7 +401,7 @@ p {
     display: none;
   }
   .contact-titles {
-    margin-top: 60px !important;
+    margin-top: 30px !important;
   }
   .texts {
     padding: 30px;
