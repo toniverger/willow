@@ -51,9 +51,7 @@
     padding: 30px 0px;
 }
 
-.label-work {
-    padding-left: 0px !important;
-}
+
 
 .requiered :last-child {
     color: red;

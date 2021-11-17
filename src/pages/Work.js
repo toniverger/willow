@@ -6,7 +6,7 @@ import WhatsappIcon from "../assets/img/WhatsApp.png"
 
 const Work = () => {
   return (
-    <>
+    <div className="root-work">
       <Navbar />
       <div className="work">
         <div className="work_texts">
@@ -29,7 +29,7 @@ const Work = () => {
       >
         <img class="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
       </a>
-    </>
+    </div>
   );
 };
 export default Work;
