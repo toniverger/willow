@@ -3,16 +3,20 @@
     width: 300px;
     height: 30px;
     padding: 10px;
-    border: 1px solid rgb(146, 146, 146);
+    border: none;
+    border-radius: 3px;
     margin: 10px;
+    box-shadow: inset 0px 0px 3px #ccc;
 }
 .select-work {
     background-color: #f2f2f2;
     width: 300px;
     height: 50px;
     padding: 10px;
-    border: 1px solid rgb(146, 146, 146);
+    border: none;
+    border-radius: 3px;
     margin: 10px;
+    box-shadow: inset 0px 0px 3px #ccc;
 }
 .btn-submit_work {
     background-color: #f2f2f2;
@@ -29,6 +33,9 @@
 }
 .textarea-work {
     width: 300px !important;
+    border: none;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 3px #ccc;
 }
 .questions-checkbox {
     flex-direction: row;
