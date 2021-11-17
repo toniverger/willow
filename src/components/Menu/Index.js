@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import './style.css';
 
 const Menu = ({ open,  }) => {
@@ -7,10 +9,10 @@ const Menu = ({ open,  }) => {
             {
                 open && (
                     <div className="container-menu">
-                        <a href="/"> Inicio </a>
-                        <a href="/servicios"> Servicios </a>
-                        <a href="/postulaciones">Quiero ser parte</a>
-                        <a href="/contacto"> Contacto  </a>
+                        <Link to="/"> Inicio </Link>
+                        <Link to="/servicios"> Servicios </Link>
+                        <Link to="/postulaciones">Quiero ser parte</Link>
+                        <Link to="/contacto"> Contacto  </Link>
                     </div>
                 )
             }

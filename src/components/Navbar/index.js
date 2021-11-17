@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/img/cropped-logo-willow1h-ch.png';
-import { Link } from 'react-router-dom';
 import Menu from '../Menu/Index';
 import MenuIcon from '../../assets/img/menuIcon.png'
 
@@ -19,10 +19,10 @@ const Navbar = () => {
                 <img className="logo-willow" src={Logo} alt="logo willow" />
             </Link>
             <div className="navbar_link">
-                <a className="link-nav" href="/">INICIO</a>
-                <a className="link-nav" href="/servicios">SERVICIOS</a>
-                <a className="link-nav" href="/postulaciones">QUIERO SER PARTE</a>
-                <a className="link-nav" href="/contacto">CONTACTO</a>
+                <Link className="link-nav" to="/">INICIO</Link>
+                <Link className="link-nav" to="/servicios">SERVICIOS</Link>
+                <Link className="link-nav" to="/postulaciones">QUIERO SER PARTE</Link>
+                <Link className="link-nav" to="/contacto">CONTACTO</Link>
             </div>
             <div className="menu">
                 <div className="containerIconMenu">
