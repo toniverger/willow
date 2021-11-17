@@ -1,14 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Navbar from "../components/Navbar";
-import "../styles/styles.css";
 import carBlue from "../assets/img/car-blue.PNG";
 import background from "../assets/img/mancha1.png";
 import carPink from "../assets/img/car-pink.PNG";
 import carYellow from "../assets/img/auto3-600x466.png";
 import peoples from "../assets/img/peoples.PNG";
 import Footer from "../components/footer/Index";
-
 import WhatsappIcon from "../assets/img/WhatsApp.png"
+
+import "../styles/styles.css";
 
 const Index = () => {
   return (
@@ -53,9 +55,9 @@ const Index = () => {
               online y se lava el auto sin moverlo del lugar.
             </p>
             <button className="btn-blue">
-              <a className="text-white" href="/servicios">
+              <Link className="text-white" to="/servicios">
                 SOLICITAR LAVADO
-              </a>
+              </Link>
             </button>
           </div>
         </div>
@@ -64,13 +66,13 @@ const Index = () => {
             <p className="subtitle">¿Precisas un lavado?</p>
             <p className="subtitle2">Indicanos donde esta tú auto</p>
             <p>
-              Te invitamos a completar tus datos a través del siguiente link{" "}
+              Te invitamos Link completar tus datos Link través del siguiente link{" "}
             </p>
             <button className="btn-blue">
               {" "}
-              <a className="text-white" href="/servicios">
+              <Link className="text-white" to="/servicios">
                 SOLICITAR LAVADO
-              </a>{" "}
+              </Link>{" "}
             </button>
           </div>
           <img className="img-draw" src={peoples} alt="personas" />
@@ -86,19 +88,19 @@ const Index = () => {
           <div className="texts paragraph_right">
             <p className="subtitle">¿Quieres ser uno de nuestros lavadores?</p>
             <p>
-              Queremos conocerte mejor, te invitamos a completar tus datos en el
+              Queremos conocerte mejor, te invitamos Link completar tus datos en el
               siguiente boton.{" "}
             </p>
             <button className="btn-blue">
-              <a className="text-white" href="/postulaciones">
+              <Link className="text-white" to="/postulaciones">
                 QUIERO SER PARTE
-              </a>
+              </Link>
             </button>
           </div>
         </div>
       </div>
-      <a class="whatsapp-link" href="//api.whatsapp.com/send?phone=+59898795475&text=Hola, me gustaría contratar el servicio de Willow" target="_blank" rel="noreferrer">
-        <img class="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
+      <a className="whatsapp-link" href="//api.whatsapp.com/send?phone=+59898795475&text=Hola, me gustaría contratar el servicio de Willow" target="_blank" rel="noreferrer">
+        <img className="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
       </a>
       <Footer />
     </>

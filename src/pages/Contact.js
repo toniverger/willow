@@ -12,7 +12,7 @@ const Contact = () => {
       <Navbar />
       <div className="contact">
         <div className="contact-titles">
-          <h className="contact-subtitle">Contacto</h>
+          <h1 className="contact-subtitle">Contacto</h1>
           <p className="contact-text">
             Si precisas contactarte podes hacerlo en el siguiente formulario:
           </p>
@@ -22,12 +22,12 @@ const Contact = () => {
         </div>
       </div>
       <a
-        class="whatsapp-link"
+        className="whatsapp-link"
         href="//api.whatsapp.com/send?phone=+59898795475&text=Hola, me gustaría contratar el servicio de Willow"
         target="_blank"
         rel="noreferrer"
       >
-        <img class="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
+        <img className="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
       </a>
       <Footer />
     </>

@@ -45,13 +45,32 @@ p {
 }
 .btn-blue {
   width: 170px;
-  height: 40px;
+  height: 45px;
   background-color: #01c1cf;
   border: none;
   color: white;
   font-weight: 600;
-  margin: 40px 0px;
+  padding: 0px 10px;
+  margin: 30px 0px;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-blue-disabled {
+  width: 170px;
+  height: 45px;
+  background-color: #ccc;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0px 10px;
+  margin: 30px 0px;
+  border-radius: 4px;
+  cursor: normal;
+}
+.data-link {
+  width: fit-content;
+  padding: 0px;
 }
 
 /*Home*/
@@ -216,13 +235,13 @@ p {
 /*Data*/
 .data {
   width: 100%;
-  height: 90vh;
+  height: calc(100vh - 142px);
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   text-align: justify;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
 }
 .data_title {
@@ -239,16 +258,18 @@ p {
 .text_price {
   color: #78a465;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 /*contact*/
 .contact {
   display: flex;
-  justify-content: center;
+  width: 70%;
+  justify-content: space-around;
+  align-items: baseline;
   flex-direction: row;
   height: calc(100vh - 142px);
   padding: 0px;
-  margin: 0px;
+  margin: 0 auto;
 }
 .contact-titles {
   align-self: flex-start;
@@ -318,9 +339,6 @@ p {
   .input_mail {
     width: 440px !important;
   }
-  .btn-submit {
-    width: 450px !important;
-  }
   .texts-left {
     padding-left: 70px;
   }
@@ -384,6 +402,7 @@ p {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    height: auto;
   }
   .contact-titles {
     padding: 0px;
@@ -401,7 +420,7 @@ p {
     align-items: center;
   }
   .textarea-service {
-    width: 440px;
+    width: 100%;
   }
   .menu {
     width: 70px;
@@ -487,7 +506,7 @@ p {
 }
 @media screen and (max-width: 500px) {
   .contact {
-    height: 100vh;
+    height: auto;
   }
   .contact-form {
     width: 100%;
@@ -501,17 +520,18 @@ p {
   .input_mail {
     width: auto !important;
   }
-  textarea {
-    width: auto !important;
-  }
   .btn-submit {
     width: auto !important;
   }
   .container-data {
     flex-direction: column;
+    width: 100%;
+  }
+  .container-data2 {
+    width: 100%;
   }
   .textarea-service {
-    width: 440px !important;
+    width: 100%;
   }
   .img-yellow {
     width: 100px;
@@ -581,7 +601,7 @@ p {
 
 @media screen and (max-width: 483px) {
   .textarea-service {
-    width: 200px !important;
+    width: 100% !important;
   }
   .data {
     height: auto;
@@ -623,7 +643,7 @@ p {
     width: auto;
   }
   .textarea-service {
-    width: 200px !important;
+    width: 100% !important;
   }
   .img-car {
     display: block;

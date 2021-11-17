@@ -1,6 +1,9 @@
 .form-contact {
-  width: 480px;
   height: auto;
+  width: 100% !important;
+  justify-content: flex-end !important;
+  margin: 0px !important;
+  flex-direction: column;
 }
 .container-data {
   display: flex;
@@ -54,6 +57,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .input {
