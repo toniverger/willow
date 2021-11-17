@@ -81,7 +81,7 @@ const FormWork = () => {
                 </div>
                 <div className="questions-work">
                     <label className="requiered">DISPONIBILIDAD HORARIA <span>*</span> </label>
-                    <input name="time" value={answers.times} onChange={(e) => handleChangeInputs(e)} className="input-work"></input>
+                    <input name="time" value={answers.time} onChange={(e) => handleChangeInputs(e)} className="input-work"></input>
                 </div>
                 <div>
                     <label className="requiered label-work">¿QUERRÍA TRABAJAR FINES DE SEMANA? <span>*</span> </label>
