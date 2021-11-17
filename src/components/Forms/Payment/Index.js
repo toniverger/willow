@@ -10,35 +10,33 @@ const FormPayment = () => {
         setPayment(e.target.value);
     }
 
-    const finishPurchase = () => {
-        completeDatas();
+    const finishPurchase = (e) => {
+        e.preventDefault();
+        setFinish(true)
     }
 
-    const completeDatas = () => {
-        setFinish(true);
-    }
 
     return (
         <div>
-            <form>
-                <input className="input-service" placeholder="Nombre Completo" type="text"></input>
-                <input className="input-service" placeholder="Marca" type="text"></input>
-                <input className="input-service" placeholder="Color" type="text"></input>
-                <input className="input-service" placeholder="Matrícula" type="text"></input>
-                <textarea className="textarea-service" placeholder="Ubicación: Lo más detallada posible."></textarea>
-                <div>
+            <form onSubmit={(e) => finishPurchase(e)}>
+                <input className="input-service" placeholder="Nombre Completo" type="text" required></input>
+                <input className="input-service" placeholder="Marca" type="text" required></input>
+                <input className="input-service" placeholder="Color" type="text" required></input>
+                <input className="input-service" placeholder="Matrícula" type="text" required></input>
+                <textarea className="textarea-service" placeholder="Ubicación: Lo más detallada posible." required></textarea>
+                <div className="payment-options">
                     <p>Forma de pago </p>
                     <label>Al contado </label>
-                    <input className="inputRadio" onChange={(e) => handleChange(e)} type="radio" name="metodo" value="contado"></input>
+                    <input className="inputRadio" onChange={(e) => handleChange(e)} type="radio" name="metodo" value="contado" required></input>
                     <label>Mercado Pago</label>
-                    <input className="inputRadio" onChange={(e) => handleChange(e)} type="radio" name="metodo" value="tarjeta"></input>
+                    <input className="inputRadio" onChange={(e) => handleChange(e)} type="radio" name="metodo" value="tarjeta" required></input>
                 </div>
                 {
-                    (payment === "contado") ? <button type="button" onClick={finishPurchase} className="btn-blue">FINALIZAR</button> : <button className="btn-blue"><a className="text-white" href="/">FINALIZAR EN MERCADO PAGO</a></button>
+                    (payment === "contado") ? <button type="submit"  className="btn-blue">FINALIZAR</button> : <button type="submit" className="btn-blue">FINALIZAR EN MERCADO PAGO</button>
                 }
                 {
                     (finish) && (
-                        <p style={{ color: "green" }}>Gracias por comprar nuestro servicio, nos estaremos comunicando!</p>)
+                        <p style={{ color: "green", width: "100%" }}>Gracias por preferir nuestro servicio, a la brevedad nos estaremos comunicando contigo!</p>)
                 }
             </form>
         </div>

@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/styles.css";
 import carBlue from "../assets/img/car-blue.PNG";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer/Index";
 
-import WhatsappIcon from "../assets/img/WhatsApp.png"
+import WhatsappIcon from "../assets/img/WhatsApp.png";
 
 const Service = () => {
-  const [selectVehicle, setSelectVehicle] = useState("auto");
+  const [selectVehicle, setSelectVehicle] = useState(null);
   const [viewSelect, setViewSelect] = useState(false);
-  const [typeService, setTypeService] = useState(false);
+  const [typeService, setTypeService] = useState(null);
+  const [disableButton, setDisableButton] = useState(true);
 
   const handleChangeVehicle = (e) => {
     setSelectVehicle(e.target.value);
@@ -17,6 +19,7 @@ const Service = () => {
   };
   const handleChangeService = () => {
     setTypeService(true);
+    setDisableButton(false);
   };
 
   const cleanInfo = () => {
@@ -24,6 +27,8 @@ const Service = () => {
     setSelectVehicle(null);
     setTypeService(null);
   };
+
+  console.log(selectVehicle);
 
   const auto = "200";
   const camioneta = "250";
@@ -36,7 +41,7 @@ const Service = () => {
           <img className="car-blue" src={carBlue} alt="auto azul" />
         </div>
         <div className="service_right">
-          <h className="service-subtitle">Lavado</h>
+          <h1 className="service-subtitle">Lavado</h1>
           <p className="price"> $200.00 - $250.00</p>
           <p className="service_paragraph">
             Lavado exterior realizado con hidrolavadoras a presión de bajo
@@ -63,7 +68,7 @@ const Service = () => {
           {viewSelect && (
             <div>
               <div className="type-service">
-                <p class="transport_type_p">Tipo de servicio </p>
+                <p className="transport_type_p">Tipo de servicio </p>
                 <select
                   onChange={(e) => handleChangeService(e)}
                   className="select"
@@ -89,20 +94,29 @@ const Service = () => {
               )}
             </div>
           )}
-          <button className="btn-blue">
-            <a className="text-white" href="lavado">
-              Completar Datos
-            </a>
-          </button>
+          <Link
+            to={disableButton ? "#" : "/lavado"}
+            state={{
+              category: selectVehicle,
+              price: selectVehicle === "auto" ? auto : camioneta
+            }}
+            className="data-link"
+          >
+            <button
+              className={disableButton ? "btn-blue-disabled" : "btn-blue"}
+            >
+              <span>Completar Datos</span>
+            </button>
+          </Link>
         </div>
       </div>
       <a
-        class="whatsapp-link"
+        className="whatsapp-link"
         href="//api.whatsapp.com/send?phone=+59898795475&text=Hola, me gustaría contratar el servicio de Willow"
         target="_blank"
         rel="noreferrer"
       >
-        <img class="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
+        <img className="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
       </a>
       <Footer />
     </>
