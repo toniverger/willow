@@ -81,7 +81,7 @@ const FormWork = () => {
                 </div>
                 <div className="questions-work">
                     <label className="requiered">DISPONIBILIDAD HORARIA <span>*</span> </label>
-                    <input name="time" value={answers.times} onChange={(e) => handleChangeInputs(e)} className="input-work"></input>
+                    <input name="time" value={answers.time} onChange={(e) => handleChangeInputs(e)} className="input-work"></input>
                 </div>
                 <div>
                     <label className="requiered label-work">¿QUERRÍA TRABAJAR FINES DE SEMANA? <span>*</span> </label>
@@ -131,7 +131,7 @@ const FormWork = () => {
                 <label className="requiered">¿LIBRETA DE MOTO? <span>*</span> </label>
                     <input name="moto" value={answers.moto} onChange={(e) => handleChangeInputs(e)} required className="input-work"></input>
                 </div>
-                <div>
+                <div className="questions-work">
                     <label className="requiered">FORMACIÓN: <span>*</span> </label>
                     <select className="select-work" key="0" name="study" value={answers.study} onChange={(e) => handleChangeInputs(e)} >
                         <option>Primaria incompleta</option>
@@ -154,7 +154,7 @@ const FormWork = () => {
                 </div>
                 <div className="questions-work">
                     <label className="label-work">CONTANOS EN UN VIDEO ALGO MÁS DE VOS.</label>
-                    <p className="label-work">Subí un video a Youtube, facebook, instagram. </p>
+                    <label className="label-work">Subí un video a Youtube, facebook, instagram. </label>
                     <input name="urlVideo" value={answers.urlVideo} onChange={(e) => handleChangeInputs(e)} type="text" className="input-work" placeholder="Pega aqui su link (No obligatorio)"></input>
                 </div>
                 <div className="questions-work">

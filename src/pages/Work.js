@@ -6,15 +6,13 @@ import WhatsappIcon from "../assets/img/WhatsApp.png"
 
 const Work = () => {
   return (
-    <>
+    <div className="root-work">
       <Navbar />
       <div className="work">
         <div className="work_texts">
           <p className="subtitle">QUIERO SER PARTE</p>
           <p className="wor_texts_p">
-            Estas en el trabajo o en tu casa y tienes que lavar tu auto?, no
-            pierdas tiempo y no te preocupes, con Willow podes hacer tu pedido
-            online y se lava el auto sin necesidad de moverlo de su lugar.
+          Queremos conocerte mejor, te invitamos a completar tus datos en el siguiente formulario.
           </p>
         </div>
         <div className="work_form">
@@ -29,7 +27,7 @@ const Work = () => {
       >
         <img className="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
       </a>
-    </>
+    </div>
   );
 };
 export default Work;

@@ -200,7 +200,7 @@ p {
   border-radius: 1px !important;
   border-color: #ccc !important;
   color: #777777 !important;
-  padding: 0px 5px
+  padding: 0px 5px;
 }
 .btn-clean {
   background-color: white;
@@ -298,16 +298,17 @@ p {
   justify-content: center;
   align-content: center;
   flex-direction: row;
+  margin-top: 30px;
 }
 
 .work_texts {
- font-weight: 400;
- color: gray;
- font-family: initial;
- font-size: 20px;
- width: 50%;
- height: auto;
- padding-left: 300px;
+  font-weight: 400;
+  color: gray;
+  font-family: initial;
+  font-size: 20px;
+  width: 50%;
+  height: auto;
+  padding-left: 300px;
 }
 
 .work_subtitle {
@@ -328,6 +329,18 @@ p {
 @media screen and (max-width: 1555px) {
   .texts-left {
     padding-left: 20px;
+  }
+  .root-work {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .work {
+    width: 60%;
+  }
+  .work_texts {
+    padding-left: 0px;
   }
 }
 
@@ -359,6 +372,18 @@ p {
   }
   .img-background {
     display: none;
+  }
+  .root-work {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .work {
+    width: 80%;
+  }
+  .work_texts {
+    padding-left: 0px;
   }
 }
 
@@ -449,28 +474,27 @@ p {
   .work {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
   }
   .work_texts {
-    width: 90%;
-    text-align: center;
-    padding-left: 0px;
+    width: 400px;
+    padding-left: 40px;
+    font-size: 14px;
+    align-self: center;
   }
   .work_form {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: initial;
+    padding-left: 0px;
   }
   .form-work {
     flex-direction: column;
-    color: red;
+    width: 100%;
+    padding-left: 0px;
   }
+
   .questions-work {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
   .service {
     padding-top: 0px;
@@ -481,6 +505,51 @@ p {
     align-items: center;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .root-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .form-work {
+    padding-left: 0px;
+  }
+  .work_form {
+    align-self: center;
+  }
+  .work_texts {
+    padding-left: 0px;
+    align-self: center;
+  }
+  .work {
+    width: 75%;
+  }
+
+  .form-work {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .work_texts {
+    margin-left: 0px;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  .root-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .form-work {
+    padding-left: 0px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .car-blue {
     height: 300px;
@@ -499,11 +568,20 @@ p {
     justify-content: center;
   }
   .work_texts {
-    width: 90%;
-    padding: 10px;
+    width: 400px;
+    padding-left: 0px;
     font-size: 14px;
+    margin-left: 0px;
+  }
+  .form-work {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .work_texts {
+    width: 330px;
   }
 }
+
 @media screen and (max-width: 500px) {
   .contact {
     height: auto;
@@ -597,6 +675,31 @@ p {
   .logo-willow {
     width: 150px;
   }
+  .whatsapp-icon {
+    width: 30px;
+  }
+  .form-work {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .work_texts {
+    padding-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 12px;
+  }
+  label {
+    font-size: 10px;
+  }
+  .root-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .work {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 483px) {
@@ -609,6 +712,29 @@ p {
   .car-blue {
     height: 250px;
   }
+  .work_form {
+    align-self: center;
+  }
+  .form-work {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .work_texts {
+    width: 330px;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 12px;
+    align-self: center;
+  }
+  .root-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .work {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -617,6 +743,9 @@ p {
   }
   textarea {
     width: auto !important;
+  }
+  .form-work {
+    padding-left: 0px;
   }
 }
 
@@ -700,9 +829,45 @@ p {
     width: 150px;
     height: max-content;
   }
+  .form-work {
+    padding-left: 0px;
+  }
+  .work_texts {
+    width: 300px;
+    align-items: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
+  .input-work {
+    width: 280px !important;
+  }
+  .work_form {
+    padding-left: 20px;
+  }
+  .work_texts {
+    padding-left: 0px;
+  }
+  .questions-work {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 342px) {
+  .work_form {
+    padding-left: 0px;
+  }
+  .textarea-work {
+    width: 280px !important;
+    padding: 0px;
+  }
+
+  .btn-submit_work {
+    width: 290px !important;
+  }
+}
+@media screen and (max-width: 321px) {
   .car-blue {
     height: 150px;
   }
@@ -718,6 +883,38 @@ p {
     padding: 5px;
     color: #40a7c0;
   }
+  .form-work {
+    padding-left: 0px;
+  }
+  .work_form {
+    padding-left: 10px;
+  }
+  .work_texts {
+    padding-left: 0px;
+  }
+  .questions-work {
+    margin: 0px;
+  }
+  .textarea-work {
+    width: 280px !important;
+    padding: 0px;
+  }
+
+  .btn-submit_work {
+    width: 290px !important;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .textarea-work {
+    width: 200px;
+  }
+  .btn-submit_work {
+    width: 200px;
+  }
+  .input-work {
+    width: 2500px !important;
+  }
 }
 
 .whatsapp-link {
@@ -730,10 +927,4 @@ p {
   position: fixed;
   bottom: 30px;
   right: 30px;
-}
-
-@media screen and (max-width: 500px) {
-  .whatsapp-icon {
-    width: 50px;
-  }
 }
