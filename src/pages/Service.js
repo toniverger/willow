@@ -28,10 +28,8 @@ const Service = () => {
     setTypeService(null);
   };
 
-  console.log(selectVehicle);
-
-  const auto = "200";
-  const camioneta = "250";
+  const auto = 200;
+  const camioneta = 250;
 
   return (
     <>
