@@ -76,7 +76,7 @@ const Service = () => {
                   <option value="">Tipo de servicio</option>
                   <option value="auto">Lavado exterior</option>
                   <option disabled value="camioneta">
-                    Lavado y Apirado (Próximamente)
+                    Lavado y aspirado (Próximamente)
                   </option>
                 </select>
               </div>
