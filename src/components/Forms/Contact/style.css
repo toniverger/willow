@@ -1,6 +1,6 @@
 .form-contact {
   height: auto;
-  width: 100% !important;
+  width: auto;
   justify-content: flex-end !important;
   margin: 0px !important;
   flex-direction: column;
