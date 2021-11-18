@@ -10,7 +10,7 @@ const Work = () => {
       <Navbar />
       <div className="work">
         <div className="work_texts">
-          <p className="subtitle">QUIERO SER PARTE</p>
+          <p className="subtitle work_subtitle">Quiero ser parte</p>
           <p className="word_texts_p">
           Queremos conocerte mejor, te invitamos a completar tus datos en el siguiente formulario.
           </p>
