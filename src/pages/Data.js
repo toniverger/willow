@@ -18,7 +18,7 @@ const FormData = () => {
         <p>Has seleccionado la categoria: {data.category.toUpperCase()}</p>
         Total a pagar:
         <p className="text_price">$ {data.price}</p>
-        <FormPayment />
+        <FormPayment category={data.category} />
       </div>
       <a
         className="whatsapp-link"

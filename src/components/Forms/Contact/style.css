@@ -40,7 +40,7 @@ label {
   border-radius: 3px;
   color: #777777;
   box-shadow: inset 0px 0px 3px #ccc;
-  margin: 10px;
+  margin: 10px 0px;
 }
 .emails {
   width: auto;
@@ -54,14 +54,14 @@ label {
   border-radius: 3px;
   color: white;
   font-weight: 600;
-  margin: 10px;
+  margin: 10px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-.input {
+.contact-input {
   background-color: #f2f2f2;
   width: 200px;
   height: 30px;
@@ -70,10 +70,22 @@ label {
   border-radius: 3px;
   color: #777777;
   box-shadow: inset 0px 0px 3px #ccc;
-  margin: 10px;
+  margin: 10px 10px 20px 0px;
 }
 
-textarea {
+.contact-input_lastName {
+  background-color: #f2f2f2;
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: #777777;
+  box-shadow: inset 0px 0px 3px #ccc;
+  margin: 10px 0px 20px 10px;
+}
+
+.contact-textarea {
   background-color: #f2f2f2;
   width: 440px;
   height: 100px;
@@ -82,10 +94,22 @@ textarea {
   border-radius: 3px;
   color: #777777;
   box-shadow: inset 0px 0px 3px #ccc;
-  margin: 10px;
+  margin: 10px 0px;
 }
 
-.required :last-child {
+.contact-required {
+  padding: 0px;
+}
+.contact-required_lastName {
+  padding: 0px;
+  margin-left: 10px;
+}
+
+.contact-required :last-child {
+  color: red;
+}
+
+.contact-required_lastName :last-child {
   color: red;
 }
 

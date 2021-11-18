@@ -52,6 +52,7 @@ form {
 @media screen and (max-width: 800px) {
 .form-contact {
     justify-content: center !important;
+    width: 100% !important;
 }
 
 form {

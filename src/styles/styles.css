@@ -10,17 +10,23 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 84vh;
+  height: calc(100vh - 120px);
 }
 .congrats_title {
   color: #01c1cf;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
+.congrats_subtitle {
+  margin-bottom: 60px;
+}
 
 /*Globals*/
 p {
   color: #777777;
 }
+ 
 .subtitle {
   color: #48bbd7;
   font-size: 20px;
@@ -157,6 +163,7 @@ p {
   width: 80%;
 }
 .content-four {
+  display: flex;
   justify-content: space-evenly;
   align-content: flex-start;
   margin: 60px auto;
@@ -458,23 +465,20 @@ p {
   .contact {
     padding: 20px;
     justify-content: flex-start;
-    align-items: center;
     flex-direction: column;
     height: auto;
+    width: 105% !important;
   }
   .contact-titles {
     padding: 0px;
     justify-content: center;
     text-align: left;
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin-left: 10px;
   }
   .contact-form {
-    width: 100%;
     padding: 0px;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   .textarea-service {
@@ -620,7 +624,27 @@ p {
 @media screen and (max-width: 500px) {
   .contact {
     height: auto;
+    width: 80% !important;
   }
+
+  .contact-input {
+    width: auto;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .contact-input_lastName {
+    width: auto;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .contact-required {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .contact-required_lastName {
+    margin: 0px;
+  }
+
   .contact-form {
     width: 100%;
   }
@@ -652,10 +676,11 @@ p {
   }
   .content-four {
     display: flex !important;
-    flex-direction: column-reverse !important;
+    flex-direction: column !important;
     align-self: center !important;
     justify-self: center !important;
   }
+ 
   .subtitle {
     text-align: left;
   }
@@ -692,26 +717,24 @@ p {
   }
   .content-two {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
   }
   .content-three {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
   }
-  .middle {
-    display: none;
-  }
+
   .home {
     padding-top: 20px;
   }
-  .content-four {
-    align-items: flex-end;
-  }
+
   .logo-willow {
     width: 150px;
   }
   .whatsapp-icon {
-    width: 30px;
+    right: 20px !important;
+    bottom: 20px !important;
+    width: 40px !important;
   }
   .form-work {
     padding-left: 0px;

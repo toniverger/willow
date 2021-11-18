@@ -75,7 +75,9 @@ const Index = () => {
               </Link>{" "}
             </button>
           </div>
-          <img className="img-draw" src={peoples} alt="personas" />
+          <div className="img-car">
+            <img className="img-draw" src={peoples} alt="personas" />
+          </div>
         </div>
         <div className="content-three in-row center">
           <div className="img-car yellow">
