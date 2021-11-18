@@ -46,7 +46,7 @@ const FormWork = () => {
                 <label className="requiered">BARRIO: <span>*</span> </label>
                 <input name="neighborhood" value={answers.neighborhood} onChange={(e) => handleChangeInputs(e)} required type="text" className="input-work"></input>
                 </div>
-                <div>
+                <div className="questions-work_option">
                     <label className="requiered">¿TÍENES CELULAR? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input name="telephone" value="celular" onChange={(e) => handleChangeInputs(e)} required className="inputRadio" type="radio"></input>
@@ -57,7 +57,7 @@ const FormWork = () => {
                         <label>No</label>
                     </div>
                 </div>
-                <div>
+                <div className="questions-work_option">
                     <label className="requiered label-work">¿ACCESO A INTERNET DESDE EL CELULAR? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input name="internet" value="internet" onChange={(e) => handleChangeInputs(e)} className="inputRadio" type="radio"></input>
@@ -68,7 +68,7 @@ const FormWork = () => {
                         <label>No</label>
                     </div>
                 </div>
-                <div>
+                <div className="questions-work_option">
                     <label>¿TIENE MONOTRIBUTO? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input name="monotributo" value="monotributo" onChange={(e) => handleChangeInputs(e)} className="inputRadio" type="radio"></input>
@@ -83,7 +83,7 @@ const FormWork = () => {
                     <label className="requiered">DISPONIBILIDAD HORARIA <span>*</span> </label>
                     <input name="time" value={answers.time} onChange={(e) => handleChangeInputs(e)} className="input-work"></input>
                 </div>
-                <div>
+                <div className="questions-work_option">
                     <label className="requiered label-work">¿QUERRÍA TRABAJAR FINES DE SEMANA? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input name="weekend1" value="saturday" onChange={(e) => handleChangeInputs(e)} className="inputRadio" type="checkbox"></input>
@@ -94,7 +94,7 @@ const FormWork = () => {
                         <label>Domingos</label>
                     </div>
                 </div>
-                <div>
+                <div className="questions-work_option">
                     <label className="requiered">¿PREFIERE 4 O 6 HORAS? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input name="timeWork" value="4 horas" onChange={(e) => handleChangeInputs(e)} className="inputRadio" type="checkbox"></input>
@@ -105,7 +105,7 @@ const FormWork = () => {
                         <label>6 Horas</label>
                     </div>
                 </div>
-                <div>
+                <div className="questions-work_option">
                     <label className="requiered">¿PREFIERE MAÑANA O TARDE? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input name="times" value="mañana" onChange={(e) => handleChangeInputs(e)} className="inputRadio" type="checkbox"></input>
@@ -116,7 +116,7 @@ const FormWork = () => {
                         <label>Tarde</label>
                     </div>
                 </div>
-                <div>
+                <div className="questions-work_option">
                     <label className="requiered">¿TIENE TRANSPORTE PROPIO? <span>*</span> </label>
                     <div className="questions-checkbox">
                         <input name="transport" value="moto" onChange={(e) => handleChangeInputs(e)} className="inputRadio" type="checkbox"></input>
