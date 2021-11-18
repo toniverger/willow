@@ -7,7 +7,7 @@ const FormWork = () => {
             <form className="form-contact" action="https://formsubmit.co/03578cdb8b2903d06d30c6edb8aa3c78" method="POST">
                 <input type="hidden" name="_template" value="table"></input>
                 <input type="hidden" name="_subject" value="Willow, alguien quiere trabajar con ustedes!"></input>
-                <input type="hidden" name="_next" value="http://localhost:3000/gracias"></input>
+                <input type="hidden" name="_next" value="http://localhost:3000/gracias-compras"></input>
                 <input type="hidden" name="_captcha" value="false"></input>
                 {/*<input type="hidden" name="_cc" value="info@willow.com"> */}
                 <div className="questions-work">
