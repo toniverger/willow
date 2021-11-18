@@ -310,7 +310,9 @@ p {
   height: auto;
   padding-left: 300px;
 }
-
+.word_texts_p {
+  margin-right: 30px;
+}
 .work_subtitle {
   color: #48bbd7;
   font-size: 30px;
@@ -904,7 +906,11 @@ p {
     width: 290px !important;
   }
 }
-
+@media screen and (max-width: 310px) {
+  .input-work {
+    padding: 5px;
+  }
+}
 @media screen and (max-width: 280px) {
   .textarea-work {
     width: 200px;
