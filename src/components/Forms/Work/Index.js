@@ -25,10 +25,10 @@ const FormWork = () => {
                 <div className="questions-work_option">
                     <label className="label-option requiered">TIENES HIJOS:  <span>*</span> </label>
                     <div className="questions-checkbox">
-                        <input className="inputRadio" type="radio" name="¿Tiene hijos?" value="Si"></input>
+                        <input type="radio" name="¿Tiene hijos?" value="Si"></input>
                         <label>Si</label>
                     </div>
-                    <input className="inputRadio" type="radio" name="hijos" value="No"></input>
+                    <input type="radio" name="hijos" value="No"></input>
                     <label>No</label>
                 </div>
                 <div className="questions-work">
@@ -46,33 +46,33 @@ const FormWork = () => {
                 <div className="questions-work_option">
                     <label className="requiered">¿TÍENES CELULAR? <span>*</span> </label>
                     <div className="questions-checkbox">
-                        <input name="Celular" value="Con celular" required className="inputRadio" type="radio"></input>
+                        <input name="Celular" value="Con celular" required type="radio"></input>
                         <label>Si</label>
                     </div>
                     <div className="questions-checkbox">
-                        <input name="Celular" value="sin celular" required className="inputRadio" type="radio"></input>
+                        <input name="Celular" value="sin celular" required type="radio"></input>
                         <label>No</label>
                     </div>
                 </div>
                 <div className="questions-work_option">
                     <label className="requiered label-work">¿ACCESO A INTERNET DESDE EL CELULAR? <span>*</span> </label>
                     <div className="questions-checkbox">
-                        <input name="¿Acceso a internet?" value="internet" className="inputRadio" type="radio"></input>
+                        <input name="¿Acceso a internet?" value="internet" type="radio"></input>
                         <label>Si</label>
                     </div>
                     <div className="questions-checkbox">
-                        <input name="internet" value="sin internet" className="inputRadio" type="radio"></input>
+                        <input name="internet" value="sin internet" type="radio"></input>
                         <label>No</label>
                     </div>
                 </div>
                 <div className="questions-work_option">
                     <label>¿TIENE MONOTRIBUTO? <span>*</span> </label>
                     <div className="questions-checkbox">
-                        <input name="monotributo" value="monotributo" className="inputRadio" type="radio"></input>
+                        <input name="monotributo" value="monotributo" type="radio"></input>
                         <label>Si</label>
                     </div>
                     <div className="questions-checkbox">
-                        <input name="monotributo" value="sin monotributo" className="inputRadio" type="radio"></input>
+                        <input name="monotributo" value="sin monotributo" type="radio"></input>
                         <label>No</label>
                     </div>
                 </div>
@@ -83,44 +83,44 @@ const FormWork = () => {
                 <div className="questions-work_option">
                     <label className="requiered label-work">¿QUERRÍA TRABAJAR FINES DE SEMANA? <span>*</span> </label>
                     <div className="questions-checkbox">
-                        <input name="weekend1" value="Sábados" className="inputRadio" type="checkbox"></input>
+                        <input name="weekend1" value="Sábados" type="checkbox"></input>
                         <label>Sábados</label>
                     </div>
                     <div className="questions-checkbox">
-                        <input name="weekend2" value="Domingos" className="inputRadio" type="checkbox"></input>
+                        <input name="weekend2" value="Domingos" type="checkbox"></input>
                         <label>Domingos</label>
                     </div>
                 </div>
                 <div className="questions-work_option">
                     <label className="requiered">¿PREFIERE 4 O 6 HORAS? <span>*</span> </label>
                     <div className="questions-checkbox">
-                        <input name="¿Prefiere 4 o 6 horas?" value="4 horas" className="inputRadio" type="checkbox"></input>
+                        <input name="¿Prefiere 4 o 6 horas?" value="4 horas" type="checkbox"></input>
                         <label>4 Horas</label>
                     </div>
                     <div className="questions-checkbox">
-                        <input name="timeWork" value="6 horas" className="inputRadio" type="checkbox"></input>
+                        <input name="timeWork" value="6 horas" type="checkbox"></input>
                         <label>6 Horas</label>
                     </div>
                 </div>
                 <div className="questions-work_option">
                     <label className="requiered">¿PREFIERE MAÑANA O TARDE? <span>*</span> </label>
                     <div className="questions-checkbox">
-                        <input name="Prefiere trabajar de:" value="mañana" className="inputRadio" type="checkbox"></input>
+                        <input name="Prefiere trabajar de:" value="mañana" type="checkbox"></input>
                         <label>Mañana</label>
                     </div>
                     <div className="questions-checkbox">
-                        <input name="times" value="tarde" className="inputRadio" type="checkbox"></input>
+                        <input name="times" value="tarde" type="checkbox"></input>
                         <label>Tarde</label>
                     </div>
                 </div>
                 <div className="questions-work_option">
                     <label className="requiered">¿TIENE TRANSPORTE PROPIO? <span>*</span> </label>
                     <div className="questions-checkbox">
-                        <input name="Transporte Personal:" value="moto" className="inputRadio" type="checkbox"></input>
+                        <input name="Transporte Personal:" value="moto" type="checkbox"></input>
                         <label>Moto</label>
                     </div>
                     <div className="questions-checkbox">
-                        <input name="transport2" value="bici" className="inputRadio" type="checkbox"></input>
+                        <input name="transport2" value="bici" type="checkbox"></input>
                         <label>Bici</label>
                     </div>
                 </div>
