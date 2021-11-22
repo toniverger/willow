@@ -4,7 +4,7 @@ import './style.css';
 const FormWork = () => {
     return (
         <>
-            <form className="form-contact" action="https://formsubmit.co/03578cdb8b2903d06d30c6edb8aa3c78" method="POST">
+            <form className="form-work" action="https://formsubmit.co/03578cdb8b2903d06d30c6edb8aa3c78" method="POST">
                 <input type="hidden" name="_template" value="table"></input>
                 <input type="hidden" name="_subject" value="Willow, alguien quiere trabajar con ustedes!"></input>
                 <input type="hidden" name="_next" value="http://localhost:3000/gracias-compras"></input>

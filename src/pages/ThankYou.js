@@ -10,7 +10,7 @@ const ThankYou = () => {
             <Navbar />
             <div className="congrats">
                 <h1 className="congrats_title">Gracias por comunicarte con nosotros.!</h1>
-                <p>Te responderemos a la brevedad.</p>
+                <p className="congrats_text">Te responderemos a la brevedad.</p>
                 <Link to="/">
                     <img src={Willow} alt="logo willow"></img>
                 </Link>

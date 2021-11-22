@@ -4,7 +4,7 @@ import './style.css'
 const Footer = () => {
     return (
         <div className="footer">
-<p> Copyright © 2021 Willow </p>
+            <p> Copyright © 2021 Willow </p>
         </div>
     )
 }
