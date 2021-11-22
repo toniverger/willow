@@ -16,7 +16,6 @@
   color: #01c1cf;
 }
 
-
 /*Globals*/
 p {
   color: #777777;
@@ -250,7 +249,7 @@ p {
 /*Data*/
 .data {
   width: 100%;
-  height: calc(100vh - 142px);
+  height: calc(100vh - 140px);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -331,7 +330,7 @@ p {
   color: gray;
   font-family: initial;
   font-size: 20px;
-  width: 30%; 
+  width: 30%;
   height: auto;
   padding-left: 0px;
 }
@@ -350,11 +349,10 @@ p {
   display: flex;
   justify-content: flex-end;
   align-self: center;
-  
 }
 
 /* media query*/
-@media screen and (max-width: 1555px) {
+@media screen and (max-width: 1560px) {
   .texts-left {
     padding-left: 20px;
   }
@@ -369,6 +367,9 @@ p {
   }
   .work_texts {
     padding-left: 0px;
+  }
+  .data {
+    height: calc(100vh - 30px);
   }
 }
 
@@ -584,7 +585,6 @@ p {
   .congrats_title {
     font-size: 24px;
   }
-  
 }
 
 @media screen and (max-width: 651px) {
@@ -622,7 +622,8 @@ p {
   }
   .work_texts {
     width: 330px;
-  }.contact-form {
+  }
+  .contact-form {
     justify-content: flex-start;
   }
 }
@@ -755,8 +756,10 @@ p {
   .textarea-contact {
     width: auto;
   }
+  .lastname {
+    margin: 10px 0px;
+  }
 }
-
 
 @media screen and (max-width: 483px) {
   .textarea-service {
@@ -985,7 +988,7 @@ p {
     padding-left: 0px !important;
     width: 270px !important;
     margin-left: 0px;
-}
+  }
 }
 
 @media screen and (max-width: 315px) {
@@ -1018,7 +1021,7 @@ p {
   .footer {
     font-size: 12px;
   }
-  .container-menu  > a {
+  .container-menu > a {
     font-size: 12px;
     padding: 7px;
   }

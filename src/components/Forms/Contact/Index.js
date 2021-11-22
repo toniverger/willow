@@ -16,7 +16,7 @@ const FormContact = () => {
         </div>
         <div className="contact_in-col">
           <label className="requiered">APELLIDO <span>*</span></label>
-          <input className="input" type="text" name="Apellido" required></input>
+          <input className="input lastname" type="text" name="Apellido" required></input>
         </div>
       </div>
       <div className="container-data2">

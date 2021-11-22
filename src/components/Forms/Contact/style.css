@@ -40,7 +40,7 @@ label {
   border-radius: 3px;
   color: #777777;
   box-shadow: inset 0px 0px 3px #ccc;
-  margin: 10px;
+  margin: 10px 0px;
 }
 .emails {
   width: auto;
@@ -70,7 +70,11 @@ label {
   border-radius: 3px;
   color: #777777;
   box-shadow: inset 0px 0px 3px #ccc;
-  margin: 10px;
+  margin: 10px 0px;
+}
+
+.lastname {
+  margin: 0px 10px;
 }
 
 textarea {
@@ -83,6 +87,10 @@ textarea {
   color: #777777;
   box-shadow: inset 0px 0px 3px #ccc;
   margin: 10px;
+}
+
+.textarea-contact {
+  margin: 10px 0px;
 }
 
 .required :last-child {
