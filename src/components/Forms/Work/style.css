@@ -1,6 +1,6 @@
 .input-work {
     background-color: #f2f2f2;
-    width: 300px;
+    width: 100% !important;
     height: 30px;
     padding: 10px;
     border: none;
@@ -10,12 +10,12 @@
 }
 .select-work {
     background-color: #f2f2f2;
-    width: 300px;
+    width: 106% !important;
     height: 50px;
-    padding: 10px 0px;
+    padding: 10px 10px;
     border: none;
     border-radius: 3px;
-    margin: 10px 5px;
+    margin: 10px 0px;
     box-shadow: inset 0px 0px 3px #ccc;
 }
 .select-work :last-child {
@@ -23,7 +23,7 @@
 }
 .btn-submit_work {
     background-color: #f2f2f2;
-    width: 320px;
+    width: 60%;
     height: 30px;
     padding: 20px;
     border: 1px solid rgb(146, 146, 146);
@@ -35,13 +35,14 @@
     cursor: pointer;
 }
 .textarea-work {
-    width: 300px;
+    width: 100% !important;
     border: none;
     border-radius: 3px;
     box-shadow: inset 0px 0px 3px #ccc;
 }
 .questions-checkbox {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     margin: 10px 0px;
 }
 .questions-work_option {
@@ -51,12 +52,13 @@
     height: 100px;
 }
 .label-option {
-    margin: 40px 0px;
+    margin: 10px 0px;
     padding: 30px 0px;
 }
 
 .requiered {
     padding: 0px !important;
+    font-weight: 700;
 }
 
 .label-work {

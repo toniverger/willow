@@ -18,13 +18,28 @@
   display: flex;
   flex-direction: row;
 }
+
 .contact_in-col {
   display: flex;
   flex-direction: column;
-  height: auto;
-  justify-content: center;
-  width: 50%;
+  width: 100%;
 }
+
+@media screen and (max-width: 500px) {
+  .contact_in-col {
+    width: 100%;
+  }
+  .contact_in-col.emails {
+    width: 100%;
+  }
+  .contact_in-col {
+    width: 100%;
+  }
+  .input {
+    width: 100% !important;
+  }
+}
+
 label {
   width: auto;
   color: #777777;
@@ -48,7 +63,7 @@ label {
 }
 .btn-submit {
   background-color: #01c1cf;
-  width: auto;
+  width: 60%;
   height: 30px;
   padding: 20px;
   border: none;
@@ -96,6 +111,7 @@ textarea {
 
 .requiered-lastname{
   margin: 0px 0px 0px 0px !important;
+  font-weight: 700;
 }
 
 .required :last-child {

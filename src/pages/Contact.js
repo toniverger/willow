@@ -1,10 +1,10 @@
 import React from "react";
 import FormContact from "../components/Forms/Contact/Index";
 import Navbar from "../components/Navbar";
-import Footer from "../components/footer/Index"
+import Footer from "../components/footer/Index";
 import "../styles/styles.css";
 
-import WhatsappIcon from "../assets/img/WhatsApp.png"
+import WhatsappIcon from "../assets/img/WhatsApp.png";
 
 const Contact = () => {
   return (

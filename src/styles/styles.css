@@ -307,12 +307,14 @@ p {
 
 /*work*/
 .work {
-  width: 80%;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  width: 70%;
+  justify-content: space-around;
+  align-items: baseline;
   flex-direction: row;
-  margin-top: 30px;
+  height: auto;
+  padding: 0px;
+  margin: 0 auto;
 }
 .work_subtitle {
   font-weight: 700;
@@ -330,12 +332,12 @@ p {
   color: gray;
   font-family: initial;
   font-size: 20px;
-  width: 30%;
   height: auto;
-  padding-left: 0px;
+  padding: 40px;
 }
 .word_texts_p {
-  margin-right: 30px;
+  font-size: 16px;
+  width: 70%;
 }
 .work_subtitle {
   color: #48bbd7;
@@ -345,10 +347,28 @@ p {
 }
 
 .work_form {
-  width: 50%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-self: center;
+  padding: 40px;
+}
+
+.form-work{
+  height: auto;
+  width: 100%;
+  justify-content: flex-start !important;
+  margin: 0px !important;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+.form-work{
+  height: auto !important;
+  width: 100% !important;
+  margin: 0px !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
 }
 
 /* media query*/
@@ -379,13 +399,10 @@ p {
     margin-top: 20px;
   }
   .input_mail {
-    width: 440px !important;
+    width: 100% !important;
   }
   .texts-left {
     padding-left: 70px;
-  }
-  .questions-work_option {
-    margin-left: 30px !important;
   }
 }
 
@@ -462,7 +479,7 @@ p {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    height: auto;
+    height: calc(100vh - 182px);
   }
   .contact-titles {
     padding: 0px;
@@ -529,6 +546,7 @@ p {
   }
 
   .questions-work {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -628,26 +646,30 @@ p {
   }
 }
 
+@media screen and (max-width: 430px) {
+  .contact {
+    height: auto !important;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .contact {
-    height: auto;
+    height: calc(100vh - 182px);
   }
   .contact-form {
     width: 100%;
   }
-  .form-contact {
-    width: 90%;
-  }
+
   .input {
-    width: auto !important;
+    width: 100% !important;
     margin: 10px 0px;
   }
   .input_mail {
-    width: auto !important;
+    width: 100% !important;
     margin: 10px 0px;
   }
   .btn-submit {
-    width: auto !important;
+    width: 60%;
   }
   .container-data {
     flex-direction: column;
@@ -658,6 +680,9 @@ p {
   }
   .textarea-service {
     width: 100%;
+  }
+  .textarea-contact {
+    width: 100% !important;
   }
   .img-yellow {
     width: 100px;
@@ -736,9 +761,7 @@ p {
     padding-left: 0px;
     font-size: 12px;
   }
-  label {
-    font-size: 10px;
-  }
+
   .root-work {
     display: flex;
     flex-direction: column;
@@ -803,10 +826,10 @@ p {
 }
 @media screen and (max-width: 430px) {
   .input {
-    width: auto !important;
+    width: 100% !important;
   }
   textarea {
-    width: auto !important;
+    width: 100% !important;
   }
   .form-work {
     padding-left: 0px;
@@ -816,7 +839,7 @@ p {
     padding-left: 0px;
   }
   .textarea-work {
-    width: 300px !important;
+    width: 100% !important;
   }
 }
 
@@ -837,10 +860,10 @@ p {
     width: 200px;
   }
   .input_mail {
-    width: auto !important;
+    width: 100% !important;
   }
   .btn-submit {
-    width: auto !important;
+    width: 60%;
   }
   textarea {
     width: auto;
@@ -944,7 +967,7 @@ p {
     padding: 0px;
   }
   .btn-submit_work {
-    width: 290px !important;
+    width: 60%;
   }
 }
 
@@ -982,7 +1005,7 @@ p {
   }
 
   .btn-submit_work {
-    width: 290px !important;
+    width: 60%;
   }
   .questions-work_option {
     padding-left: 0px !important;
@@ -1002,7 +1025,7 @@ p {
     width: 250px !important;
   }
   .btn-submit_work {
-    width: 250px !important;
+    width: 60%;
   }
   .work_texts {
     width: 270px !important;
@@ -1034,7 +1057,7 @@ p {
     width: 200px !important;
   }
   .btn-submit_work {
-    width: 200px;
+    width: 60%;
   }
   .input-work {
     width: 2500px !important;

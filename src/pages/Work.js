@@ -1,6 +1,7 @@
 import React from "react";
 import FormWork from "../components/Forms/Work/Index";
 import Navbar from "../components/Navbar";
+import "../styles/styles.css";
 
 import WhatsappIcon from "../assets/img/WhatsApp.png"
 import Footer from "../components/footer/Index";
@@ -9,7 +10,6 @@ const Work = () => {
   return (
     <>
       <Navbar />
-    <div className="root-work">
       <div className="work">
         <div className="work_texts">
           <p className="subtitle work_subtitle">Quiero ser parte</p>
@@ -29,7 +29,6 @@ const Work = () => {
       >
         <img className="whatsapp-icon" src={WhatsappIcon} alt="whatsapp icon" />
       </a>
-    </div>
     <Footer />
     </>
   );
