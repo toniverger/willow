@@ -639,9 +639,11 @@ p {
   }
   .input {
     width: auto !important;
+    margin: 10px 0px;
   }
   .input_mail {
     width: auto !important;
+    margin: 10px 0px;
   }
   .btn-submit {
     width: auto !important;
