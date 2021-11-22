@@ -26,7 +26,7 @@ const FormContact = () => {
         </div>
         <div className="contact_in-col">
           <label className="requiered">COMENTARIO O MENSAJE <span>*</span></label>
-          <textarea name="Mensaje" placeholder="Dejanos tu mensaje." required></textarea>
+          <textarea className="textarea-contact" name="Mensaje" placeholder="Dejanos tu mensaje." required></textarea>
         </div>
         <div className="contact_in-col">
           <button className="btn-submit" type="submit">ENVIAR</button>

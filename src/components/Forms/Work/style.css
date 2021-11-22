@@ -35,7 +35,7 @@
     cursor: pointer;
 }
 .textarea-work {
-    width: 300px !important;
+    width: 300px;
     border: none;
     border-radius: 3px;
     box-shadow: inset 0px 0px 3px #ccc;
@@ -47,7 +47,7 @@
 .questions-work_option {
     margin: 10px 0px;
     padding-left: 0px;
-    width: 350px !important; 
+    width: 350px; 
     height: 100px;
 }
 .label-option {

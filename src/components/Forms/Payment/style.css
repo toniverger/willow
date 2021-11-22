@@ -3,7 +3,7 @@ body {
 }
 
 form {
-    width: 40% !important;
+    width: 40%;
     height: auto;
     color: grey;
     display: flex;
