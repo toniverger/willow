@@ -15,7 +15,7 @@ const FormContact = () => {
           <input className="input" type="text" name="Nombre" required></input>
         </div>
         <div className="contact_in-col">
-          <label className="requiered">APELLIDO <span>*</span></label>
+          <label className="requiered-lastname">APELLIDO <span>*</span></label>
           <input className="input lastname" type="text" name="Apellido" required></input>
         </div>
       </div>
@@ -28,9 +28,7 @@ const FormContact = () => {
           <label className="requiered">COMENTARIO O MENSAJE <span>*</span></label>
           <textarea className="textarea-contact" name="Mensaje" placeholder="Dejanos tu mensaje." required></textarea>
         </div>
-        <div className="contact_in-col">
-          <button className="btn-submit" type="submit">ENVIAR</button>
-        </div>
+        <button className="btn-submit" type="submit">ENVIAR</button>
       </div>
     </form>
   )

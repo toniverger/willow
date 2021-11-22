@@ -23,6 +23,7 @@
   flex-direction: column;
   height: auto;
   justify-content: center;
+  width: 50%;
 }
 label {
   width: auto;
@@ -54,7 +55,7 @@ label {
   border-radius: 3px;
   color: white;
   font-weight: 600;
-  margin: 10px;
+  margin: 10px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +75,7 @@ label {
 }
 
 .lastname {
-  margin: 0px 10px;
+  margin: 10px 0px 10px 10px;
 }
 
 textarea {
@@ -93,7 +94,16 @@ textarea {
   margin: 10px 0px;
 }
 
+.requiered-lastname{
+  margin: 0px 0px 0px 0px !important;
+}
+
 .required :last-child {
   color: red;
 }
+
+.requiered-lastname :last-child {
+  color: red;
+}
+
 
