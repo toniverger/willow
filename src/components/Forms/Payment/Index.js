@@ -4,26 +4,24 @@ import './style.css';
 
 const FormPayment = () => {
     const [payment, setPayment] = useState("contado");
-    const [finish, setFinish] = useState(false);
 
     const handleChange = (e) => {
         setPayment(e.target.value);
     }
 
-    const finishPurchase = (e) => {
-        e.preventDefault();
-        setFinish(true)
-    }
-
-
     return (
         <div>
-            <form onSubmit={(e) => finishPurchase(e)}>
-                <input className="input-service" placeholder="Nombre Completo" type="text" required></input>
-                <input className="input-service" placeholder="Marca" type="text" required></input>
-                <input className="input-service" placeholder="Color" type="text" required></input>
-                <input className="input-service" placeholder="Matrícula" type="text" required></input>
-                <textarea className="textarea-service" placeholder="Ubicación: Lo más detallada posible." required></textarea>
+            <form className="form-contact" action="https://formsubmit.co/xracer007@hotmail.com" method="POST">
+                <input type="hidden" name="_template" value="table"></input>
+                <input type="hidden" name="_subject" value="Willow, han comprado un lavado!"></input>
+                <input type="hidden" name="_next" value="https://www.willow.com.uy//gracias-compras"></input>
+                <input type="hidden" name="_cc" value="info@willow.com"></input>
+                <input type="hidden" name="_captcha" value="false"></input>
+                <input className="input-service" placeholder="Nombre Completo" type="text" name="Nombre"required></input>
+                <input className="input-service" placeholder="Marca" type="text" name="Marca" required></input>
+                <input className="input-service" placeholder="Color" type="text" name="Color" required></input>
+                <input className="input-service" placeholder="Matrícula" type="text" name="Matrícula" required></input>
+                <textarea className="textarea-service" placeholder="Ubicación: Lo más detallada posible." name="Ubicación" required></textarea>
                 <div className="payment-options">
                     <p>Forma de pago </p>
                     <label>Al contado </label>
@@ -33,10 +31,6 @@ const FormPayment = () => {
                 </div>
                 {
                     (payment === "contado") ? <button type="submit"  className="btn-blue">FINALIZAR</button> : <button type="submit" className="btn-blue">FINALIZAR EN MERCADO PAGO</button>
-                }
-                {
-                    (finish) && (
-                        <p style={{ color: "green", width: "100%" }}>Gracias por preferir nuestro servicio, a la brevedad nos estaremos comunicando contigo!</p>)
                 }
             </form>
         </div>

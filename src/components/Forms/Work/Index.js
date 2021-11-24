@@ -6,7 +6,7 @@ const FormWork = () => {
     <>
       <form
         className="form-work"
-        action="https://formsubmit.co/03578cdb8b2903d06d30c6edb8aa3c78"
+        action="https://formsubmit.co/xracer007@hotmail.com"
         method="POST"
       >
         <input type="hidden" name="_template" value="table"></input>
@@ -18,7 +18,7 @@ const FormWork = () => {
         <input
           type="hidden"
           name="_next"
-          value="http://localhost:3000/gracias-compras"
+          value="https://www.wilow.com.uy/gracias-compras"
         ></input>
         <input type="hidden" name="_captcha" value="false"></input>
         <input type="hidden" name="_cc" value="info@willow.com"></input>
