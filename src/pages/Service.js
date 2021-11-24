@@ -110,7 +110,7 @@ const Service = () => {
       </div>
       <a
         className="whatsapp-link"
-        href="//api.whatsapp.com/send?phone=+59898795475&text=Hola, me gustaría contratar el servicio de Willow"
+        href="//api.whatsapp.com/send?phone=+59899658298&text=Hola, me gustaría contratar el servicio de Willow"
         target="_blank"
         rel="noreferrer"
       >
