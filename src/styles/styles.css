@@ -685,7 +685,7 @@ p {
     width: 100% !important;
   }
   .img-yellow {
-    width: 100px;
+    width: 200px;
     height: auto;
   }
   .subtitle {
@@ -872,6 +872,7 @@ p {
   }
   .img-car {
     display: block;
+    align-self: center;
   }
 
   .img-yellow {
