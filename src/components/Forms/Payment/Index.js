@@ -18,7 +18,7 @@ const FormPayment = (priceData) => {
                     (payment === "contado") ? (
                         "https://www.willow.com.uy/gracias-compras"
                     ) : (
-                        (priceData.priceData === 300) ? ("https://mpago.la/1M4W6ub") : ("https://mpago.la/1QHsxzg")
+                        (priceData.priceData === 200) ? ("https://mpago.la/1M4W6ub") : ("https://mpago.la/1QHsxzg")
                     )}>
                 </input>
                 <input type="hidden" name="_cc" value="info@willow.com"></input>
