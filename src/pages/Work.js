@@ -23,7 +23,7 @@ const Work = () => {
       </div>
       <a
         className="whatsapp-link"
-        href="//api.whatsapp.com/send?phone=+59899658298&text=Hola, me gustaría contratar el servicio de Willow"
+        href="https://wa.me/59899658298?text=Hola,%20me%20gustaría%20contratar%20el%20servicio%20de%20Willow"
         target="_blank"
         rel="noreferrer"
       >
