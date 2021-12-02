@@ -11,7 +11,7 @@ const FormPayment = () => {
 
     return (
         <div>
-            <form className="form-contact" action="https://formsubmit.co/xracer007@hotmail.com" method="POST">
+            <form action="https://formsubmit.co/xracer007@hotmail.com" method="POST">
                 <input type="hidden" name="_template" value="table"></input>
                 <input type="hidden" name="_subject" value="Willow, han comprado un lavado!"></input>
                 <input type="hidden" name="_next" value="https://www.willow.com.uy//gracias-compras"></input>
