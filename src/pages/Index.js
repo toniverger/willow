@@ -42,7 +42,7 @@ const Index = () => {
         </div>
         <div className="content-two in-row center">
           <div className="img-car">
-            <img className="img-draw middle" src={carPink} alt="auto rosa" />
+            <img className="img-draw" src={carPink} alt="auto rosa" />
           </div>
           <div className="texts-rigth">
             <p className="subtitle">
