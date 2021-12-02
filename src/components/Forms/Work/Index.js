@@ -114,7 +114,7 @@ const FormWork = () => {
         <div className="questions-checkbox">
           <div>
             <input
-              name="¿Teine acceso a internet?"
+              name="¿Tiene acceso a internet?"
               value="Si"
               type="radio"
               required
@@ -122,7 +122,7 @@ const FormWork = () => {
             <label>Si</label>
           </div>
           <div>
-            <input name="¿Teine acceso a internet?" value="No" type="radio" required></input>
+            <input name="¿Tiene acceso a internet?" value="No" type="radio" required></input>
             <label>No</label>
           </div>
         </div>
@@ -131,12 +131,12 @@ const FormWork = () => {
         </label>
         <div className="questions-checkbox">
           <div>
-            <input name="¿Teine monotributo?" value="Si" type="radio" required></input>
+            <input name="¿Tiene monotributo?" value="Si" type="radio" required></input>
             <label>Si</label>
           </div>
           <div>
             <input
-              name="¿Teine monotributo?"
+              name="¿Tiene monotributo?"
               value="No"
               type="radio"
               required
