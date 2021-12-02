@@ -66,7 +66,7 @@ const Index = () => {
             <p className="subtitle">¿Precisas un lavado?</p>
             <p className="subtitle2">Indicanos donde esta tú auto</p>
             <p>
-              Te invitamos Link completar tus datos Link través del siguiente link{" "}
+              Te invitamos a completar tus datos a través del siguiente link.{" "}
             </p>
             <button className="btn-blue">
               {" "}
@@ -88,8 +88,7 @@ const Index = () => {
           <div className="texts paragraph_right">
             <p className="subtitle">¿Quieres ser uno de nuestros lavadores?</p>
             <p>
-              Queremos conocerte mejor, te invitamos Link completar tus datos en el
-              siguiente boton.{" "}
+              Queremos conocerte mejor, te invitamos a completar tus datos a través del siguiente link.{" "}
             </p>
             <button className="btn-blue">
               <Link className="text-white" to="/postulaciones">
