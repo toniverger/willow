@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/footer/Index";
 import { useLocation } from 'react-router-dom'
 import FormPayment from "../components/Forms/Payment/Index";
@@ -10,6 +10,8 @@ const FormData = () => {
   const location = useLocation()
   const data = location.state
 
+  const [priceData, SetPriceData] = useState(data.price);
+
   return (
     <>
       <Navbar />
@@ -17,8 +19,8 @@ const FormData = () => {
         <p className="data_title">Completa tus datos</p>
         <p>Has seleccionado la categoria: {data.category.toUpperCase()}</p>
         Total a pagar:
-        <p className="text_price">$ {data.price}</p>
-        <FormPayment />
+        <p className="text_price">${data.price}</p>
+        <FormPayment priceData={priceData} />
       </div>
       <a
         className="whatsapp-link"
