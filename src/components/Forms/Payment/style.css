@@ -1,7 +1,9 @@
 body {
     background-color: white;
 }
-
+.content-form_payment {
+    width: 100%;
+}
 form {
     width: 40%;
     height: auto;

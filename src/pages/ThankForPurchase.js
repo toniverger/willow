@@ -9,7 +9,7 @@ const ThankForPurchase = () => {
         <>
             <Navbar />
             <div className="congrats">
-                <h1 className="congrats_title">Gracias por comprar nuestros servicios.!</h1>
+                <h1 className="congrats_title">¡Gracias por comprar nuestros servicios!</h1>
                 <p className="congrats_text">Nos comunicaremos a la brevedad.</p>
                 <Link to="/">
                     <img src={Willow} alt="logo willow"></img>
