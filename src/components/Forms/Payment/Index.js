@@ -31,7 +31,7 @@ const FormPayment = (priceData) => {
                 </div>
                 {
                     (payment === "contado") ? <button type="submit" className="btn-blue">FINALIZAR</button> : <button type="submit" className="btn-blue">
-                        <a href={(priceData.priceData === 200) ? "https://www.mercadopago.com.uy/checkout/v1/payment/redirect/bd5af251-3594-4b81-900d-9f36b04f02b9/payment-option-form/?preference-id=89445898-e584d9ae-8ef9-434b-963c-a29122e49d42&source=link&p=c0f659a7ea49f29830c5bf3bc38f1b9b#/" : "https://www.mercadopago.com.uy/checkout/v1/payment/redirect/b4f055c4-6462-40ad-9444-7c7a8a6e3798/payment-option-form/?source=link&preference-id=89445898-28946b93-dcaa-4093-abe1-6e1b06478bca&p=c0f659a7ea49f29830c5bf3bc38f1b9b#/"}>FINALIZAR EN MERCADO PAGO</a></button>
+                        <a href={(priceData.priceData === 200) ? "https://mpago.la/1M4W6ub" : "https://mpago.la/1QHsxzg "}>FINALIZAR EN MERCADO PAGO</a></button>
                 }
             </form>
         </div>
