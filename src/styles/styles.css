@@ -458,7 +458,7 @@ p {
     height: auto;
   }
   .img-yellow {
-    width: 300px !important;
+    width: 300px;
   }
   .texts {
     padding-right: 0px;
@@ -964,6 +964,12 @@ p {
   }
   .btn-submit_work {
     width: 60%;
+  }
+  .img-draw {
+    width: 270px;
+  }
+  .img-yellow {
+    width: 200px;
   }
 }
 
